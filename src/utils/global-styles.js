@@ -17,4 +17,5 @@ injectGlobal`
     src: url(${latoLight});
     font-weight: 300;
   }
+  h1{font-weight: 300}
 `;

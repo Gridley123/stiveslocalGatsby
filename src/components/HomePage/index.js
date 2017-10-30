@@ -6,12 +6,12 @@ import Stats from './Stats';
 import FacebookFeed from './FacebookFeed';
 import Issues from './Issues';
 
-export default () =>
+export default (props) =>
   <div>
-    <LandingPageImage/>
+    <LandingPageImage sizes={props.data.landingPageImgSize.childImageSharp.sizes}/>
     <HomeContent/>
-    <Features />
-    <Stats />
-    <Issues />
-    <FacebookFeed />
+    <Features/>
+    <Stats/>
+    <Issues/>
+    <FacebookFeed/>
   </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import {Col} from 'react-flexbox-grid';
 import '../../../utils/global-styles';
 import ContentWrap from '../../CenteredDiv';

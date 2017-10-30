@@ -52,10 +52,9 @@ overflow: hidden;
 
 const MenuCollapse = styled.ul`
 margin: 25px 0;
-list-style: none;
 padding: 0;
 display: block;
-list-style-type: disc;
+list-style: disc none;
 margin-before: 1em;
 margin-after: 1em;
 margin-start: 0px;
@@ -68,7 +67,7 @@ line-height: 1.7;
 display: list-item;
 text-align:match-parent;
 margin-bottom: 0;
-`
+`;
 
 const MenuLinkCollapse = styled(Link)`
 color: #272727;
@@ -99,7 +98,7 @@ const activeStyleCollapse = {color: '#b7b7b7', };
 const MenuDesktop = (props) => {
   const links = props.links.map((link,i) =>
     <MenuItem key={i}>
-      <MenuLinkMain to={link.href} activeStyle={activeStyle}>
+      <MenuLinkMain exact = {link.name === 'Home'} to={link.href} activeStyle={activeStyle}>
         <MenuLinkSpan>{link.name}</MenuLinkSpan>
       </MenuLinkMain>
     </MenuItem>
@@ -117,7 +116,7 @@ const MenuDesktop = (props) => {
 const MenuMobile = (props) => {
   const links = props.links.map((link, i) =>
     <MenuItemCollapse key={i}>
-      <MenuLinkCollapse to={link.href} activeStyle={activeStyleCollapse}>
+      <MenuLinkCollapse onlyActiveOnIndex = {link.name === 'Home'} to={link.href} activeStyle={activeStyleCollapse}>
         <MenuLinkSpan>{link.name}</MenuLinkSpan>
       </MenuLinkCollapse>
     </MenuItemCollapse>

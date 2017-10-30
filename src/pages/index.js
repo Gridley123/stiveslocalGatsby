@@ -1,20 +1,31 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import HomePage from '../components/HomePage/'
-import styled from 'styled-components'
 
-const TestDiv = styled.div`
-height: 500px;
-width:100%;
-background-color: #red;
-`
-
-export default () =>
+export default ({data}) => {
+  console.log(data);
+  return(
   <div>
-    <HomePage />
+    <HomePage data={data}/>
   </div>
+  );
+}
 
 
-
+export const publishedPosts = graphql`
+    query images {
+        landingPageImgSize: file(relativePath: { regex: "/St-Ives-Local-Cover-Tunnel-With-Logo.png/g"}) {
+            id
+            childImageSharp {
+                # Specify the image processing steps right in the query
+                # Makes it trivial to update as your page's design changes.
+                sizes(
+                    maxWidth:2400
+                ) {
+                    ...GatsbyImageSharpSizes
+                }
+            }
+        }
+    }
+`;
 
 
