@@ -97,7 +97,7 @@ const PublishedIssues = ({ data }) => {
 
 export const publishedPosts = graphql`
     query allPublishedPosts {
-        allMarkdownRemark(sort: {fields: [frontmatter___issue_date], order: DESC} filter: {frontmatter : {title: {regex: "published-posts/g"}}}) {
+        allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/published-issues/"}} sort: {fields: [frontmatter___issue_date], order: DESC}) {
             edges {
                 node {
                     id

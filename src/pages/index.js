@@ -14,8 +14,8 @@ export default ({data}) => {
 export const publishedPosts = graphql`
     query images {
         landingPageImgSize: file(relativePath: { regex: "/St-Ives-Local-Cover-Tunnel-With-Logo.png/g"}) {
-            id
             childImageSharp {
+                id
                 # Specify the image processing steps right in the query
                 # Makes it trivial to update as your page's design changes.
                 sizes(

@@ -1,0 +1,15 @@
+---
+
+categories: "Clubs & Societies,Health"
+company_name: "St Ives Breathers Club"
+home_address_line_1: "St Anta Church Hall"
+home_address_line_2: "Porthrepta Road"
+town: "Carbis Bay"
+postcode: "TR26 2LD"
+latitude: "50.1946602"
+longitude: "-5.4617139"
+home_phone: "01736 756729"
+photo_url: "st-ives-breathers-club/Screen-Shot-2017-02-02-at-11.12.42.png.png"
+image: "st-ives-breathers-club.png"
+
+---

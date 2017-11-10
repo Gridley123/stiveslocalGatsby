@@ -1,0 +1,16 @@
+---
+
+categories: "Equipment Hire"
+company_name: "Star Equipment Hire"
+home_address_line_1: "Unit 4c"
+home_address_line_2: "Penbeagle Industrial Estate"
+town: "St Ives"
+postcode: "TR26 2JH"
+latitude: "50.2037101"
+longitude: "-5.4929357"
+home_phone: "01736 791685"
+website_url: "http://www.stiveshire.co.uk"
+photo_url: "star-equipment-hire/Screen-Shot-2017-02-02-at-11.13.15.png.png"
+image: "star-equipment-hire.png"
+
+---

@@ -1,0 +1,17 @@
+---
+
+categories: "Legal,Solicitors"
+company_name: "Coodes Solicitors"
+home_address_line_1: "The Guildhall"
+home_address_line_2: "Street-an-Pol"
+town: "St Ives"
+postcode: "TR26 2DS"
+latitude: "50.2116359"
+longitude: "-5.4803025"
+home_phone: "01736 339333"
+email: "info@coodes.co.uk"
+website_url: "http://www.coodes.co.uk"
+photo_url: "coodes-solicitors/Coodes-logo-black-PRINT.jpg.jpg"
+image: "coodes-solicitors.png"
+
+---

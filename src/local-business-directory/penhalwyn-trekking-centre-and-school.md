@@ -1,0 +1,13 @@
+---
+
+categories: "Courses,Activities,Equestrian"
+company_name: "Penhalwyn Trekking Centre & School"
+town: "Halsetown"
+postcode: "TR26 3AN"
+latitude: "50.1931189"
+longitude: "-5.4973683"
+home_phone: "01736 796461"
+photo_url: "penhalwyn-trekking-centre-school/Screen-Shot-2017-02-02-at-11.17.34.png.png"
+image: "penhalwyn-trekking-centre-and-school.png"
+
+---

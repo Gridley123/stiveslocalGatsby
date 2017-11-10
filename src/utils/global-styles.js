@@ -2,6 +2,7 @@ import {injectGlobal} from 'styled-components';
 import dearJoe from '../fonts/dearJoe5.ttf'
 import lato from '../fonts/Lato-Regular.ttf'
 import latoLight from '../fonts/Lato-Light.ttf'
+import latoBold from '../fonts/Lato-Bold.ttf';
 
 injectGlobal`
   @font-face {
@@ -16,6 +17,11 @@ injectGlobal`
     font-family: 'Lato';
     src: url(${latoLight});
     font-weight: 300;
+  }
+    @font-face {
+    font-family: 'Lato';
+    src: url(${latoBold});
+    font-weight: bold;
   }
   h1{font-weight: 300}
 `;

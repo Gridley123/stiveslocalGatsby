@@ -116,7 +116,7 @@ const MenuDesktop = (props) => {
 const MenuMobile = (props) => {
   const links = props.links.map((link, i) =>
     <MenuItemCollapse key={i}>
-      <MenuLinkCollapse onlyActiveOnIndex = {link.name === 'Home'} to={link.href} activeStyle={activeStyleCollapse}>
+      <MenuLinkCollapse exact = {link.name === 'Home'} to={link.href} activeStyle={activeStyleCollapse}>
         <MenuLinkSpan>{link.name}</MenuLinkSpan>
       </MenuLinkCollapse>
     </MenuItemCollapse>

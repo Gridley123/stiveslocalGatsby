@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
   },
-  plugins: ['gatsby-transformer-sharp', 'gatsby-plugin-sharp', `gatsby-plugin-react-helmet`, 'gatsby-transformer-remark', `gatsby-plugin-styled-components`,
+  plugins: ['gatsby-transformer-json', 'gatsby-transformer-excel', 'gatsby-transformer-sharp', 'gatsby-plugin-sharp', `gatsby-plugin-react-helmet`, 'gatsby-transformer-remark', `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

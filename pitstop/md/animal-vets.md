@@ -1,0 +1,15 @@
+---
+
+categories: "Pets,Vets"
+company_name: "Animal Vets"
+home_address_line_1: "18 Fore Street"
+town: "Hayle"
+postcode: "TR27 4DY"
+latitude: "50.19102"
+longitude: "-5.4094659"
+home_phone: "01736755555"
+website_url: "http://www.animalvets.co.uk"
+photo_url: "animal-vets/Screen-Shot-2017-03-21-at-16.49.30.png.png"
+image: "animal-vets.png"
+
+---

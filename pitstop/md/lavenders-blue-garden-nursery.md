@@ -1,0 +1,17 @@
+---
+
+categories: "Gardens & Horticulture"
+company_name: "Lavenders Blue Garden Nursery"
+home_address_line_1: "1 Penpol Avenue"
+town: "Hayle"
+postcode: "TR27 4AQ"
+latitude: "50.1837122"
+longitude: "-5.4190727"
+home_phone: "01736 754844"
+facebook_url: "https://www.facebook.com/lavendersbluegardennursery/"
+twitter_url: "https://twitter.com/LavendersblueGN"
+website_url: "http://www.lavendersbluenursery.co.uk"
+photo_url: "lavenders-blue-garden-nursery/Screen-Shot-2017-02-02-at-11.20.37.png.png"
+image: "lavenders-blue-garden-nursery.png"
+
+---

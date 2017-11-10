@@ -1,0 +1,24 @@
+---
+
+categories: "Food,Catering Services"
+company_name: "A.L.P Catering"
+home_phone: "07562839634"
+email: "daniel@alpcatering.co.uk"
+facebook_url: "https://www.facebook.com/alpcatering/"
+instagram_url: "http://www.instagram.com/alpcatering"
+website_url: "http://www.alpcatering.co.uk"
+detail: "Dinner Parties
+
+Buffets
+
+Picnic Hampers
+
+Chef Hire
+
+
+
+Home-made catering from dinner parties at home or your holiday home., buffets for any occasion, picnic hampers, chef hire and deep cleaning.  Based in Cornwall with over 14 years experience we pride ourselves in using Cornish produce wherever possible to give the highest quality dining experience."
+photo_url: "a-l-p-catering/ALP-final-ad-MAY17.png.png"
+image: "alp-catering.png"
+
+---
