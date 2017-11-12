@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9329239-ea5c-42f6-b2ad-df8bf890b7bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/local-business-directory/Filter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gatsby-node-json-writer.js" afterPath="$PROJECT_DIR$/gatsby-node-json-writer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gatsby-node.js" afterPath="$PROJECT_DIR$/gatsby-node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header/TideWidget.js" afterPath="$PROJECT_DIR$/src/components/Header/TideWidget.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/HomePage/LandingPageImage.js" afterPath="$PROJECT_DIR$/src/components/HomePage/LandingPageImage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Link.js" afterPath="$PROJECT_DIR$/src/components/Link.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header/index.js" afterPath="$PROJECT_DIR$/src/components/Header/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/HomePage/Features/Feature.js" afterPath="$PROJECT_DIR$/src/components/HomePage/Features/Feature.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/HomePage/Stats/index.js" afterPath="$PROJECT_DIR$/src/components/HomePage/Stats/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/index.js" afterPath="$PROJECT_DIR$/src/layouts/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/index.js" afterPath="$PROJECT_DIR$/src/pages/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/local-business-directory/Listing.js" afterPath="$PROJECT_DIR$/src/pages/local-business-directory/Listing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/local-business-directory/index.js" afterPath="$PROJECT_DIR$/src/pages/local-business-directory/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/published-issues.js" afterPath="$PROJECT_DIR$/src/pages/published-issues.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/advertiser/index.js" afterPath="$PROJECT_DIR$/src/templates/advertiser/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/published-issue.js" afterPath="$PROJECT_DIR$/src/templates/published-issue.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,11 +53,9 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/layouts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="30" column="46" lean-forward="false" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-                  <folding>
-                    <element signature="e#0#25#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="180">
+                  <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -89,11 +78,42 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Header/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="178">
+                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="54" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
-                    <marker date="1507571429000" expanded="true" signature="160:295" ph="{...}" />
+                    <marker date="1510510675000" expanded="true" signature="160:295" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Feature.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/HomePage/Features/Feature.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                    <marker date="1510510993000" expanded="true" signature="260:300" ph="{...}" />
+                    <marker date="1510510993000" expanded="true" signature="325:405" ph="{...}" />
+                    <marker date="1510510993000" expanded="true" signature="434:514" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Link.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Link.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                    <marker date="1510323176000" expanded="true" signature="129:241" ph="{...}" />
+                    <marker date="1510323176000" expanded="true" signature="182:213" ph="{...}" />
+                    <marker date="1510323176000" expanded="true" signature="283:391" ph="{...}" />
+                    <marker date="1510323176000" expanded="true" signature="332:363" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -122,7 +142,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/local-business-directory/index.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="90">
@@ -186,45 +206,31 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Listing.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/local-business-directory/Listing.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                    <marker date="1510323239000" expanded="true" signature="198:222" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Link.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Link.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                    <marker date="1510323176000" expanded="true" signature="129:241" ph="{...}" />
-                    <marker date="1510323176000" expanded="true" signature="182:213" ph="{...}" />
-                    <marker date="1510323176000" expanded="true" signature="283:391" ph="{...}" />
-                    <marker date="1510323176000" expanded="true" signature="332:363" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Filter.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/pages/local-business-directory/Filter.js">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/layouts/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-                  <folding />
+                <state relative-caret-position="277">
+                  <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+                  <folding>
+                    <element signature="e#0#38#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/HomePage/Stats/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="435">
+                  <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                    <marker date="1510524855000" expanded="true" signature="266:326" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -252,8 +258,8 @@
       <find>console.l</find>
       <find>&lt;/p&gt;</find>
       <find>console.log</find>
-      <find>console.</find>
       <find>node.</find>
+      <find>console.</find>
     </findStrings>
     <replaceStrings>
       <replace>ColStyled</replace>
@@ -273,9 +279,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/local-business-directory/george-robinson-kitchens-and-interiors.md" />
-        <option value="$PROJECT_DIR$/src/local-business-directory/greenwood-wilson-chartered-tax-advisors-and-accountants.md" />
-        <option value="$PROJECT_DIR$/src/local-business-directory/jc-landscapes.md" />
         <option value="$PROJECT_DIR$/src/local-business-directory/john-andrews-cabinetmakers-and-joiners.md" />
         <option value="$PROJECT_DIR$/src/local-business-directory/matley-electrical-and-solar.md" />
         <option value="$PROJECT_DIR$/src/local-business-directory/mpb-lock-and-key.md" />
@@ -314,7 +317,6 @@
         <option value="$PROJECT_DIR$/gatsby-node-json-writer.js" />
         <option value="$PROJECT_DIR$/src/components/Header/TideWidget.js" />
         <option value="$PROJECT_DIR$/src/templates/advertiser/index.js" />
-        <option value="$PROJECT_DIR$/src/layouts/index.js" />
         <option value="$PROJECT_DIR$/src/components/HomePage/LandingPageImage.js" />
         <option value="$PROJECT_DIR$/src/pages/index.js" />
         <option value="$PROJECT_DIR$/src/pages/published-issues.js" />
@@ -324,6 +326,10 @@
         <option value="$PROJECT_DIR$/gatsby-node.js" />
         <option value="$PROJECT_DIR$/src/pages/local-business-directory/Filter.js" />
         <option value="$PROJECT_DIR$/src/pages/local-business-directory/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Header/index.js" />
+        <option value="$PROJECT_DIR$/src/components/HomePage/Features/Feature.js" />
+        <option value="$PROJECT_DIR$/src/components/HomePage/Stats/index.js" />
+        <option value="$PROJECT_DIR$/src/layouts/index.js" />
       </list>
     </option>
   </component>
@@ -413,20 +419,23 @@
               <item name="stiveslocal" type="b2602c69:ProjectViewProjectNode" />
               <item name="stiveslocal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
+              <item name="Features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stiveslocal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stiveslocal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
+              <item name="Stats" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stiveslocal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stiveslocal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stiveslocal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stiveslocal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stiveslocal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stiveslocal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="local-business-directory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stiveslocal" type="b2602c69:ProjectViewProjectNode" />
@@ -446,6 +455,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="advertiser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stiveslocal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stiveslocal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -548,7 +563,7 @@
       <workItem from="1509029352448" duration="3828000" />
       <workItem from="1509096360710" duration="8129000" />
       <workItem from="1509345703927" duration="61026000" />
-      <workItem from="1510254574671" duration="19900000" />
+      <workItem from="1510254574671" duration="25291000" />
     </task>
     <task id="LOCAL-00001" summary="Working">
       <created>1510306512981</created>
@@ -557,11 +572,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510306512982</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Visibility Filter System Working">
+      <created>1510487352965</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1510487352965</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245477000" />
+    <option name="totallyTimeSpent" value="250868000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,7 +644,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Stop" />
     <MESSAGE value="Working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working" />
+    <MESSAGE value="Visibility Filter System Working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Visibility Filter System Working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -631,13 +654,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Social.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/advertiser/SocialMedia.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -738,19 +754,6 @@
             <marker date="1506334937000" expanded="true" signature="309:357" ph="{...}" />
             <marker date="1506334937000" expanded="true" signature="384:467" ph="{...}" />
             <marker date="1506334937000" expanded="true" signature="515:532" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HomePage/Features/Feature.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-            <marker date="1507389539000" expanded="true" signature="259:299" ph="{...}" />
-            <marker date="1507389539000" expanded="true" signature="324:404" ph="{...}" />
-            <marker date="1507389539000" expanded="true" signature="433:513" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1178,20 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Link.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <marker date="1510323176000" expanded="true" signature="129:241" ph="{...}" />
-            <marker date="1510323176000" expanded="true" signature="182:213" ph="{...}" />
-            <marker date="1510323176000" expanded="true" signature="283:391" ph="{...}" />
-            <marker date="1510323176000" expanded="true" signature="332:363" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/local-business-directory/Listing.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1239,32 +1228,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1507571429000" expanded="true" signature="160:295" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" column="46" lean-forward="false" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gatsby-node-json-writer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/local-business-directory/Filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1510487117000" expanded="true" signature="138:139" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1330,11 +1309,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/local-business-directory/Filter.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Header/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="178">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1510510675000" expanded="true" signature="160:295" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Link.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1510323176000" expanded="true" signature="129:241" ph="{...}" />
+            <marker date="1510323176000" expanded="true" signature="182:213" ph="{...}" />
+            <marker date="1510323176000" expanded="true" signature="283:391" ph="{...}" />
+            <marker date="1510323176000" expanded="true" signature="332:363" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HomePage/Features/Feature.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1510510993000" expanded="true" signature="260:300" ph="{...}" />
+            <marker date="1510510993000" expanded="true" signature="325:405" ph="{...}" />
+            <marker date="1510510993000" expanded="true" signature="434:514" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HomePage/Stats/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1510524855000" expanded="true" signature="266:326" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

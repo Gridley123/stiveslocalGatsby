@@ -19,11 +19,15 @@ export default class Stats extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.activateAnimation.bind(this));
+    this.activateAnimationListener = this.activateAnimation;
+    window.addEventListener('scroll', this.activateAnimationListener);
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.activateAnimationListener);
   }
 
   activateAnimation() {
-
     if ((window.scrollY + window.innerHeight - this.wrapper.clientHeight) > this.wrapper.offsetTop) {
       this.setState({
         animationHasPlayed: true,

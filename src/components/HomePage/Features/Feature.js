@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import CentredDiv from '../../CenteredDiv';
 import '../../../utils/global-styles';
-import Link from '../../Link';
+import Link from 'gatsby-link';
 import SubHeading from '../../SubHeading';
 
 const FeatureContainer = styled.div`
@@ -31,6 +31,6 @@ export default (props) =>
     <FeatureContainer>
       <Img src={props.img} widthInPC = {props.widthInPC}/>
     <H1>{props.header}</H1>
-      {props.link ? <Link href={props.linkURL}>{props.linkTitle}</Link> : <SubHeading>{props.linkTitle}</SubHeading>}
+      {props.link ? <Link to={props.linkURL}>{props.linkTitle}</Link> : <SubHeading>{props.linkTitle}</SubHeading>}
     </FeatureContainer>
   </CentredDiv>
