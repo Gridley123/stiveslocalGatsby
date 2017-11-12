@@ -49,8 +49,6 @@ class Embed extends React.Component {
 
 
 export default ({ data }) => {
-
-  console.log(data);
   return (
     <PageWrapper>
       <EmbedWrapper>

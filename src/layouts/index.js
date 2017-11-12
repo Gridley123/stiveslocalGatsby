@@ -27,9 +27,8 @@ const TemplateWrapper = ({ children }) => (
         "type": "text/javascript", "defer": true, src: '//e.issuu.com/embed.js'
       }]}
     >
-
-      <TypographyStyle typography={typography}/>
     </Helmet>
+    <TypographyStyle typography={typography}/>
     <div id="fb-root"></div>
     <Header className={"header"}/>
     <div className="pageWrapper"

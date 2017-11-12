@@ -55,11 +55,8 @@ padding: 10px;
 
 
 const PublishedIssues = ({ data }) => {
-  console.log(data);
   const edges = data.allMarkdownRemark.edges;
-  console.log(edges);
   const listItems = edges.map((edge) => {
-    console.log('Path Prefis: ' + __PATH_PREFIX__);
     const imageURL = __PATH_PREFIX__ + edge.node.frontmatter.imageURL;
     return (
       <div key={edge.node.id}>

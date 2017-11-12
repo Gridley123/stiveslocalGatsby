@@ -21,7 +21,6 @@ const JustifyDiv = styled.div`
 
 export default ({ data }) => {
   const fm = data.jsonData;
-  console.log(fm);
   const formattedAddress = data.jsonData.fields.formatted_address;
   return (
     <Wrapper>
@@ -62,7 +61,7 @@ export default ({ data }) => {
 
 export const query = graphql`
     query AdvertiserQuery($slug: String!, $imageURLRegex: String!) {
-        jsonData: businessesJson(fields: {slug: {eq: $slug}}) {
+        jsonData: localBusinessDirectoryJson(fields: {slug: {eq: $slug}}) {
             id
             fields {
                 formatted_address

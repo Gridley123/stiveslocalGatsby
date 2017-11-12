@@ -32,7 +32,6 @@ export default class LandingPageImage extends React.Component {
   }
 
   render() {
-    console.log(this.props.data);
     return (
       <div className={"landingPageImgWrapper"}
            style={{ width: this.state.width, height: this.state.height }}>

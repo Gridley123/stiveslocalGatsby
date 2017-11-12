@@ -9,8 +9,10 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField, createNode } = boundActionCreators;
   const pathRegEx = /\/local-business-directory\//;
   let slug;
-
-  if (node.internal.type === `MarkdownRemark` || node.internal.type === "BusinessesJson") {
+  // if(node.internal.type==='MarkdownRemark' && pathRegEx.test(node.id)){
+  //   jsonWriter(node);
+  // }
+  if (node.internal.type === `MarkdownRemark`  || node.internal.type === "LocalBusinessDirectoryJson") {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
     if (parsedFilePath.name !== `index` && parsedFilePath.dir !== ``) {
@@ -20,13 +22,13 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     } else {
       slug = `/${parsedFilePath.dir}/`
     }
-
     // Add slug as a field on the node.
     createNodeField({ node, name: `slug`, value: slug })
   }
 
-  if (node.internal.type === `BusinessesJson` && pathRegEx.test(node.id)) {
+  if (node.internal.type === `LocalBusinessDirectoryJson` && pathRegEx.test(node.id)) {
     //place jsonWriter (with parameter of'node') here
+    console.log("found");
     const fm = node;
     const homeAddress1 =
       fm.home_address_line_1 || null;
@@ -41,6 +43,22 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       fm.postcode || null;
     const googleMapsAPIKey = "AIzaSyC1Cro1joS6Pqm0kx6vw4Z0yd1ajsODBuI";
     const mapURL = `https://www.google.com/maps/api/geocode/json?key=${googleMapsAPIKey}&address=${encodeURI(homeAddress1 || "")},${encodeURI(homeAddress2 || "")},${encodeURI(town || "")},${encodeURI(postcode || "")}`;
+
+    const categories = node.categories;
+    categories.forEach((category) => {
+      console.log(category);
+      createNode({
+        name: category,
+        id: `advertiser_category_${category.replace(" ", "")}`,
+        parent: " ",
+        children: [],
+        internal: {
+          type: 'category',
+          contentDigest: category,
+        }
+      })
+    });
+
     return new Promise((resolve) => {
       rp(mapURL).then(function (response) {
         const json = JSON.parse(response);
@@ -53,19 +71,6 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
           console.error(`Query of Google Maps Geocoding API has failed: ${json.status}`);
         }
 
-        const categories = node.categories;
-        categories.forEach((category) => {
-          createNode({
-            name: category,
-            id: `advertiser_category_${category.replace(" ", "")}`,
-            parent: " ",
-            children: [],
-            internal: {
-              type: 'category',
-              contentDigest: category,
-            }
-          })
-        });
         resolve();
       }).catch((err) => {
         console.error(err)
@@ -92,7 +97,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       graphql(
         `
         {
-            advertisers: allBusinessesJson(filter: {id: {regex: "/local-business-directory/"}}) {
+            advertisers: allLocalBusinessDirectoryJson(filter: {id: {regex: "/local-business-directory/"}}) {
             edges {
               node {
               id
@@ -125,7 +130,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               }
             }
           }
-          published_issues: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/published-issues/g"}}) {
+          published_issues: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/published-issues/"}}) {
             edges {
               node {
               id

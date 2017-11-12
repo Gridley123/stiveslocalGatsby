@@ -15,7 +15,7 @@ display: inline-block;
 function tideDataObj(data) {
   const dateRegEx = /for\s(.+)/;
   const dateString = data.items[0].title.match(dateRegEx)[1];
-  const dateObj = moment(dateString);
+  const dateObj = moment(dateString, "dddd, D MMMM YYYY");
   const date = dateObj.format('ddd Do MMM YYYY');
   const content = Object.assign(data.items[0].content);
 

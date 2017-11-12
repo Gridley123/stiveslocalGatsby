@@ -2,7 +2,6 @@ import React from 'react'
 import HomePage from '../components/HomePage/'
 
 export default ({data}) => {
-  console.log(data);
   return(
   <div>
     <HomePage data={data}/>
