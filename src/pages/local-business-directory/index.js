@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import CentredDiv from '../../components/CenteredDiv';
-import {Grid, Col, Row} from 'react-flexbox-grid';
+import {Col, Grid, Row} from 'react-flexbox-grid';
 import Listing from './Listing';
 import Filter from './Filter';
 import mapValues from 'lodash/mapvalues'
@@ -12,17 +12,30 @@ class LocalBusinessDirectory extends Component {
   constructor(props, context) {
     super(props, context);
     this.categories = this.props.data.categories;
-    this.initialState = {};
+    this.initialFilterState = {};
     this.categories.edges.forEach((edge) => {
-      this.initialState[edge.node.id] = true;
+      this.initialFilterState[edge.node.id] = true;
     });
-    console.log(this.initialState);
+
     this.state = {
-      visibility_filter: this.initialState,
+      visibility_filter: this.initialFilterState,
     };
     this.toggleCategoryFilter = this.toggleCategoryFilter.bind(this);
     this.selectAll = this.selectAll.bind(this);
     this.deselectAll = this.deselectAll.bind(this);
+    this.filterBusinesses = this.filterBusinesses.bind(this);
+  }
+
+  filterBusinesses() {
+    const visibility_filter = this.state.visibility_filter;
+    const all = this.props.data.allLocalBusinessDirectoryJson.edges;
+    const filtered = all.filter((edge) => {
+      const checked =  edge.node.childrenCategory.some((category) => {
+        return visibility_filter[category.id] === true;
+      });
+      return checked;
+    });
+    return filtered;
   }
 
   selectAll() {
@@ -55,17 +68,23 @@ class LocalBusinessDirectory extends Component {
   }
 
   render() {
-    console.log(this.state);
-    const allSet = every(values(this.state.visibility_filter), function(v) {return v;});
-    const noneSet = every(values(this.state.visibility_filter), function(v) {return !v;});
+    console.log(this.filterBusinesses());
+    const allSet = every(values(this.state.visibility_filter), function (v) {
+      return v;
+    });
+    const noneSet = every(values(this.state.visibility_filter), function (v) {
+      return !v;
+    });
     const edges = this.props.data.allLocalBusinessDirectoryJson.edges;
-    const links = edges.map((link) => {
+
+    const links = this.filterBusinesses().map((edge) => {
       return (
-        <Listing key={link.node.id} data={link.node}/>
+        <Listing key={edge.node.id} data={edge.node}/>
       )
     });
+
     return (
-      <div style={{margin: '150px 20px 20px'}}>
+      <div style={{ margin: '150px 20px 20px' }}>
         <CentredDiv>
           <h1>
             St Ives & Surrounding Area Local Business Directory
@@ -77,7 +96,10 @@ class LocalBusinessDirectory extends Component {
               {links}
             </Col>
             <Col xs={6}>
-              <Filter visibility_filter={this.state.visibility_filter} allSet={allSet} noneSet={noneSet} selectAll={this.selectAll} deselectAll={this.deselectAll} toggleCategoryFilter={this.toggleCategoryFilter} data={this.props.data.categories}/>
+              <Filter visibility_filter={this.state.visibility_filter} allSet={allSet}
+                      noneSet={noneSet} selectAll={this.selectAll} deselectAll={this.deselectAll}
+                      toggleCategoryFilter={this.toggleCategoryFilter}
+                      data={this.props.data.categories}/>
             </Col>
           </Row>
         </Grid>
@@ -141,7 +163,9 @@ export const businessDirectory = graphql`
                     fields {
                         slug
                     }
-
+                    childrenCategory {
+                        id
+                    }
                     categories
                     company_name
 
