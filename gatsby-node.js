@@ -12,7 +12,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   // if(node.internal.type==='MarkdownRemark' && pathRegEx.test(node.id)){
   //   jsonWriter(node);
   // }
-  if (node.internal.type === `MarkdownRemark`  || node.internal.type === "LocalBusinessDirectoryJson") {
+  if (node.internal.type === `MarkdownRemark` || node.internal.type === "LocalBusinessDirectoryJson") {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
     if (parsedFilePath.name !== `index` && parsedFilePath.dir !== ``) {
@@ -47,9 +47,10 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     const categories = node.categories;
     categories.forEach((category) => {
       console.log(category);
+      const id = `advertiser_category_${category.replace(" ", "")}`;
       createNode({
         name: category,
-        id: `advertiser_category_${category.replace(" ", "")}`,
+        id,
         parent: " ",
         children: [],
         internal: {
@@ -57,7 +58,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
           contentDigest: category,
         }
       })
-      
+      node.children.push(id);
     });
 
     return new Promise((resolve) => {
