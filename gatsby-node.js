@@ -57,6 +57,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
           contentDigest: category,
         }
       })
+      
     });
 
     return new Promise((resolve) => {

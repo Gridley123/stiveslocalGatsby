@@ -15,53 +15,12 @@ const HeaderWrap = styled.header`
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      headerHeight: '0',
-      opacityPercent: '0',
-      scrollListenerAdded: false,
-    };
-    // this.updateOpacityPercent = this.updateOpacityPercent.bind(this);
-    // this.updateHeaderHeight = this.updateHeaderHeight.bind(this);
-    // this.addListener = this.addListener.bind(this);
   }
-
-  // componentDidMount() {
-  //   this.addListener();
-  //   console.log(window.location.pathname);
-  // }
-  //
-  // addListener() {
-  //   this.updateHeaderHeight();
-  //   window.addEventListener('scroll', this.updateOpacityPercent.bind(this));
-  //   this.setState({ opacityPercent: '0', scrollListenerAdded: true })
-  // }
-  //
-  // updateOpacityPercent() {
-  //   if (window.location.pathname === '/') {
-  //     const opacityPercent = 1 - ((this.state.headerHeight - window.scrollY) / this.state.headerHeight);
-  //     if (opacityPercent >= 0) {
-  //       this.setState({
-  //         opacityPercent,
-  //       })
-  //     }
-  //   } else {
-  //     this.setState({opacityPercent: '1'});
-  //   }
-  // }
-  //
-  //
-  // updateHeaderHeight() {
-  //   this.setState({
-  //     headerHeight: this.header.clientHeight,
-  //   })
-  // }
-
 
   render() {
     return (
-      <HeaderWrap style={{ opacity: this.state.opacityPercent }} innerRef={(header) => {
-        this.header = header;
-      }}>
+      <HeaderWrap style={{ opacity: this.props.opacityPercent }}
+      >
         <TopBar/>
         <Navbar/>
       </HeaderWrap>

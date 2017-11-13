@@ -11,9 +11,8 @@ class TemplateWrapper extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-      headerHeight: '0',
+      headerHeight: '117.594',
       opacityPercent: '0',
-      scrollListenerAdded: false,
     };
     this.updateHeaderHeight = this.updateHeaderHeight.bind(this);
     this.addListener = this.addListener.bind(this);
@@ -25,7 +24,6 @@ class TemplateWrapper extends Component {
   }
 
   componentDidMount() {
-    this.updateHeaderHeight();
     this.controlListener();
   }
 
@@ -48,7 +46,9 @@ class TemplateWrapper extends Component {
   }
 
   setOpacityToScroll() {
+    console.log(this.state.headerHeight, window.scrollY)
     const opacityPercent = 1 - ((this.state.headerHeight - window.scrollY) / this.state.headerHeight);
+    console.log(opacityPercent);
     if (opacityPercent >= 0) {
       if (opacityPercent >= 0) {
         this.setState({
@@ -112,7 +112,7 @@ class TemplateWrapper extends Component {
         </Helmet>
         <TypographyStyle typography={typography}/>
         <div id="fb-root"></div>
-        <Header ref={(header) => {
+        <Header opacityPercent={this.state.opacityPercent} ref={(header) => {
           this.header = header;
         }} className={"header"}/>
         <div className="pageWrapper"
