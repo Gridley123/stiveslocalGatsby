@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import CentredDiv from '../../components/CenteredDiv';
+import CentredDiv from '../CenteredDiv';
 import {Col, Grid, Row} from 'react-flexbox-grid';
 import Listing from './Listing';
 import Filter from './Filter';
@@ -28,14 +28,12 @@ class LocalBusinessDirectory extends Component {
 
   filterBusinesses() {
     const visibility_filter = this.state.visibility_filter;
-    const all = this.props.data.allLocalBusinessDirectoryJson.edges;
-    const filtered = all.filter((edge) => {
-      const checked =  edge.node.childrenCategory.some((category) => {
+    const allBusinesses = this.props.data.allLocalBusinessDirectoryJson.edges;
+    return allBusinesses.filter((edge) => {
+      return edge.node.childrenCategory.some((category) => {
         return visibility_filter[category.id] === true;
       });
-      return checked;
     });
-    return filtered;
   }
 
   selectAll() {
@@ -68,14 +66,12 @@ class LocalBusinessDirectory extends Component {
   }
 
   render() {
-    console.log(this.filterBusinesses());
     const allSet = every(values(this.state.visibility_filter), function (v) {
       return v;
     });
     const noneSet = every(values(this.state.visibility_filter), function (v) {
       return !v;
     });
-    const edges = this.props.data.allLocalBusinessDirectoryJson.edges;
 
     const links = this.filterBusinesses().map((edge) => {
       return (
@@ -112,77 +108,6 @@ class LocalBusinessDirectory extends Component {
 
 export default LocalBusinessDirectory;
 
-
-// const PublishedIssues = ({ data }) => {
-//   console.log(data);
-//   const edges = data.allMarkdownRemark.edges;
-//   console.log(edges);
-//   const listItems = edges.map((edge) => {
-//     console.log('Path Prefis: ' + __PATH_PREFIX__);
-//     const imageURL = __PATH_PREFIX__ + edge.node.frontmatter.imageURL;
-//     return (
-//       <div key={edge.node.id}>
-//         <Link to={edge.node.fields.slug}>
-//           <div>
-//             <Image src={imageURL}/>
-//           </div>
-//           <HoverOverlay>
-//             <HoverLink>
-//               {edge.node.frontmatter.title}
-//             </HoverLink>
-//           </HoverOverlay>
-//         </ Link>
-//       </div>
-//     )
-//   });
-//
-//   return (
-//     <Wrapper>
-//       <Grid style={{ marginTop: '150px', textAlign: 'center' }}
-//             component="div"
-//             columns={20}
-//             columnWidth={columnWidth}
-//             gutterWidth={20}
-//             gutterHeight={20}
-//             itemHeight={itemHeight}
-//             springConfig={{ stiffness: 170, damping: 26 }}
-//       >
-//         {listItems}
-//
-//       </Grid>
-//     </Wrapper>
-//   )
-// };
-
-export const businessDirectory = graphql`
-    query allBusinessDirectory {
-        allLocalBusinessDirectoryJson(filter: {id: {regex: "/local-business-directory/"}} sort: {fields: [company_name], order: ASC}) {
-            edges {
-                node {
-                    id
-                    fields {
-                        slug
-                    }
-                    childrenCategory {
-                        id
-                    }
-                    categories
-                    company_name
-
-                }
-            }
-        }
-        categories: allCategory(sort: {fields: [name], order: ASC}) {
-            edges {
-                node {
-                    id
-                    name
-                }
-            }
-        }
-    }
-
-`;
 
 
 

@@ -46,9 +46,7 @@ class TemplateWrapper extends Component {
   }
 
   setOpacityToScroll() {
-    console.log(this.state.headerHeight, window.scrollY)
     const opacityPercent = 1 - ((this.state.headerHeight - window.scrollY) / this.state.headerHeight);
-    console.log(opacityPercent);
     if (opacityPercent >= 0) {
       if (opacityPercent >= 0) {
         this.setState({
