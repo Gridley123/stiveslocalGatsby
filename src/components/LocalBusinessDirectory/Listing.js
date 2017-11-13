@@ -1,9 +1,9 @@
 import React from 'react';
 import {Col, Grid, Row} from 'react-flexbox-grid';
 import styled from 'styled-components';
-import {gLink} from '../Link';
+import {GLink} from '../Link';
 
-const SmallerLink = styled(gLink)`
+const SmallerLink = styled(GLink)`
       font-size: 16px;
 `
 

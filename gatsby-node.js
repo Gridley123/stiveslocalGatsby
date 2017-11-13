@@ -107,7 +107,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   slug
                   formatted_address
                 }
-                
+
                   categories
                   company_name
                   home_phone
@@ -128,7 +128,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   contact_first_name
                   contact_last_name
                   image
-              
+
               }
             }
           }

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-import gatsLink from 'gatsby-link';
+import GatsLink from 'gatsby-link';
 
 
 export default styled.a`
@@ -12,7 +12,7 @@ export default styled.a`
     text-decoration: none;
 `;
 
-export const gLink = styled(gatsLink)`
+export const GLink = styled(GatsLink)`
 font-size: 21px;
     color: #2e7163;
     &:hover{
