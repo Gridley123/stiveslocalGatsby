@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import greyBackground from '../../images/greyBackground.png';
 import Link from '../Link';
 import {FaFacebook} from 'react-icons/lib/fa'
+import FacebookProvider, { EmbeddedPost } from 'react-facebook';
 
 const FacebookContainer = styled.div`
 height:530px;
@@ -28,14 +29,9 @@ export default class Example extends Component {
           <FaFacebook style={{marginRight: '10px'}}/>
           St Ives Local Facebook Feed
         </Title>
-        <div className="fb-page" data-href="https://www.facebook.com/st-ives-local" data-tabs="timeline"
-             data-width="500" data-height="400" data-small-header="true"
-             data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
-          <blockquote cite="https://www.facebook.com/st-ives-local" className="fb-xfbml-parse-ignore"><Link
-            href="https://www.facebook.com/st-ives-local">St. Ives Local Facebook Page</Link></blockquote>
-        </div>
-        <div style={{ height: '500px' }}>
-        </div>
+        <FacebookProvider appId="157512371329819">
+          <Page href="https://www.facebook.com/st-ives-local" tabs="timeline" small-header hide-cover show-facepile/>
+        </FacebookProvider>
       </FacebookContainer>
     );
   }

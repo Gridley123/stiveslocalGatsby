@@ -13,6 +13,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   //   jsonWriter(node);
   // }
   if (node.internal.type === `MarkdownRemark` || node.internal.type === "LocalBusinessDirectoryJson") {
+    console.log(node);
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
     if (parsedFilePath.name !== `index` && parsedFilePath.dir !== ``) {
@@ -78,7 +79,6 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
         console.error(err)
       });
     });
-
 
   } else {
     return;

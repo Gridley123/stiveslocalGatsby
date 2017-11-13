@@ -29,7 +29,10 @@ export default class Header extends React.Component {
   }
 
   componentDidMount() {
-    this.controlListener();
+    if (this.props.location.pathname && this.props.location.pathname === '/') {
+      this.setOpacityToScroll();
+      this.addListener();
+    }
   }
 
   componentWillReceiveProps(nextProps) {
@@ -41,26 +44,22 @@ export default class Header extends React.Component {
   }
 
   controlListener(nextProps) {
-    console.log(this.props);
-    if (this.props.location.pathname && this.props.location.pathname === '/') {
-      this.setOpacityToScroll();
+    if (nextProps && nextProps.location.pathname === '/') {
       this.addListener();
-    } else if (nextProps && nextProps.location.pathname === '/') {
       this.setOpacityToScroll();
-      this.addListener();
     } else {
+      console.log('remove Listener acivated');
       this.removeListener();
       this.setOpacityToFull();
     }
   }
 
   setOpacityToScroll() {
-    if (window.scrollY < 300) {
-      const opacityPercent = 1 - ((this.state.headerHeight - window.scrollY) / this.state.headerHeight);
-      if (opacityPercent >= 0) {
-        this.header.style.opacity = opacityPercent;
-      }
+    const opacityPercent = 1 - ((this.state.headerHeight - window.scrollY) / this.state.headerHeight);
+    if (opacityPercent >= 0) {
+      this.header.style.opacity = opacityPercent;
     }
+
   }
 
   setOpacityToFull() {
@@ -73,11 +72,12 @@ export default class Header extends React.Component {
 
   addListener() {
     this.opacityScrollListener = this.setOpacityToScroll;
-    window.addEventListener('scroll', this.opacityScrollListener, false);
+    window.addEventListener('scroll', this.opacityScrollListener);
   }
 
   removeListener() {
-    window.removeEventListener('scroll', this.opacityScrollListener, false);
+    console.log(this.opacityScrollListener === this.setOpacityToScroll);
+    window.removeEventListener('scroll', this.opacityScrollListener);
   }
 
 
@@ -89,7 +89,9 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <HeaderWrap innerRef = {(header) => {this.header = header}}
+      <HeaderWrap innerRef={(header) => {
+        this.header = header
+      }}
       >
         <TopBar/>
         <Navbar/>

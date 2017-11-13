@@ -24,6 +24,26 @@ export const publishedPosts = graphql`
                 }
             }
         }
+        limitedIssues: allMarkdownRemark(limit:3, filter: {fileAbsolutePath: {regex: "/published-issues/"}} sort: {fields: [frontmatter___issue_date], order: DESC}) {
+            edges {
+                node {
+                    id
+                    html
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        title
+                        embed_code
+                        issue_date
+                        pubURL
+                        imageURL
+                        _PARENT
+                        parent
+                    }
+                }
+            }
+        }
     }
 `;
 

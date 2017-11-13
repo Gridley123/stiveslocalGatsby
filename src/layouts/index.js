@@ -11,6 +11,7 @@ class TemplateWrapper extends Component {
     super(props, context);
   }
 
+
   render() {
     console.log(this.header);
     const children = this.props.children;

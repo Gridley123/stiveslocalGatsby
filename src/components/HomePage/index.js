@@ -12,7 +12,7 @@ export default (props) =>
     <HomeContent/>
     <Features/>
     <Stats/>
-    <Issues/>
+    <Issues limitedIssues = {props.data.limitedIssues}/>
     <FacebookFeed/>
   </div>
 
