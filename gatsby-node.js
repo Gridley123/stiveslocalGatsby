@@ -61,24 +61,25 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       })
       node.children.push(id);
     });
+    return;
 
-    return new Promise((resolve) => {
-      rp(mapURL).then(function (response) {
-        const json = JSON.parse(response);
-        if (json.status === "OK") {
-          const formattedAddress = json.results[0].formatted_address;
-          const location = json.results[0].location;
-          createNodeField({ node, name: `location`, value: location });
-          createNodeField({ node, name: `formatted_address`, value: formattedAddress });
-        } else {
-          console.error(`Query of Google Maps Geocoding API has failed: ${json.status}`);
-        }
-
-        resolve();
-      }).catch((err) => {
-        console.error(err)
-      });
-    });
+    // return new Promise((resolve) => {
+    //   rp(mapURL).then(function (response) {
+    //     const json = JSON.parse(response);
+    //     if (json.status === "OK") {
+    //       const formattedAddress = json.results[0].formatted_address;
+    //       const location = json.results[0].location;
+    //       createNodeField({ node, name: `location`, value: location });
+    //       createNodeField({ node, name: `formatted_address`, value: formattedAddress });
+    //     } else {
+    //       console.error(`Query of Google Maps Geocoding API has failed: ${json.status}`);
+    //     }
+    //
+    //     resolve();
+    //   }).catch((err) => {
+    //     console.error(err)
+    //   });
+    // });
 
   } else {
     return;
@@ -105,7 +106,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               id
                 fields {
                   slug
-                  formatted_address
                 }
 
                   categories

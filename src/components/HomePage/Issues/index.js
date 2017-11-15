@@ -60,9 +60,9 @@ export default class Issues extends React.Component {
     const listItems = edges.map((edge) => {
       const imageURL = __PATH_PREFIX__ + edge.node.frontmatter.imageURL;
       return (
-        <Col md={4} xs={12}>
+        <Col key={edge.node.id} md={4} xs={12}>
           <CentredDiv>
-            <div key={edge.node.id}>
+            <div>
               <Link to={edge.node.fields.slug}>
                 <div>
                   <Image src={imageURL} />

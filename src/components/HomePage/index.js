@@ -6,15 +6,19 @@ import Stats from './Stats';
 import FacebookFeed from './FacebookFeed';
 import Issues from './Issues';
 
-export default (props) =>
-  <div>
-    <LandingPageImage sizes={props.data.landingPageImgSize.childImageSharp.sizes}/>
-    <HomeContent/>
-    <Features/>
-    <Stats/>
-    <Issues limitedIssues = {props.data.limitedIssues}/>
-    <FacebookFeed/>
-  </div>
+export default (props) => {
+  console.log(props.data);
+  return (
+    <div>
+      <LandingPageImage sizes={props.data.landingPageImgSize.childImageSharp.sizes}/>
+      <HomeContent/>
+      <Features/>
+      <Stats/>
+      <Issues limitedIssues={props.data.limitedIssues}/>
+      <FacebookFeed/>
+    </div>
+  )
+}
 
 
 

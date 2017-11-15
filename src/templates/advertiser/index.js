@@ -64,7 +64,6 @@ export const query = graphql`
         jsonData: localBusinessDirectoryJson(fields: {slug: {eq: $slug}}) {
             id
             fields {
-                formatted_address
                 slug
             }
             
