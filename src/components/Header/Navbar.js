@@ -64,7 +64,6 @@ export default class Navbar extends React.Component {
     this.setState(prevState => ({
       collapsed: !prevState.collapsed,
     }));
-    console.log('Clicked');
   }
 
   render() {

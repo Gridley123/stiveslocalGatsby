@@ -1,37 +1,48 @@
 import React from 'react'
 import LocalBusinessDirectory from '../components/LocalBusinessDirectory/'
 
-export default ({data}) => {
-  return(
+export default ({ data }) => {
+  return (
     <div>
-      <LocalBusinessDirectory data={data} />
+      <LocalBusinessDirectory data={data}/>
     </div>
   );
 }
 
 export const businessDirectory = graphql`
     query allBusinessDirectory {
-        allLocalBusinessDirectoryJson(filter: {id: {regex: "/local-business-directory/"}} sort: {fields: [company_name], order: ASC}) {
+        allBusiness(sort: {fields: [company_name]}) {
             edges {
                 node {
                     id
                     fields {
                         slug
                     }
-                    childrenCategory {
-                        id
-                    }
                     categories
                     company_name
-
+                    home_phone
+                    email
+                    facebook_url
+                    instagram_url
+                    website_url
+                    detail
+                    image
+                    home_address_line_1
+                    town
+                    postcode
+                    twitter_url
+                    mobile_phone
+                    home_address_line_2
+                    contact_first_name
+                    contact_last_name
                 }
             }
         }
-        categories: allCategory(sort: {fields: [name], order: ASC}) {
+        categories: allCategoriesJson {
             edges {
                 node {
                     id
-                    name
+                    categories
                 }
             }
         }

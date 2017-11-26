@@ -48,7 +48,6 @@ export default class Header extends React.Component {
       this.addListener();
       this.setOpacityToScroll();
     } else {
-      console.log('remove Listener acivated');
       this.removeListener();
       this.setOpacityToFull();
     }
@@ -76,7 +75,6 @@ export default class Header extends React.Component {
   }
 
   removeListener() {
-    console.log(this.opacityScrollListener === this.setOpacityToScroll);
     window.removeEventListener('scroll', this.opacityScrollListener);
   }
 

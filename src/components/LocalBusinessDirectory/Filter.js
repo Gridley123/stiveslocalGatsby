@@ -9,13 +9,13 @@ class Filter extends Component {
 
   render() {
 
-    const edges = this.props.data.edges;
-    const filters = edges.map((edge) =>
-      <div key={edge.node.id}>
+    const categories = this.props.data.edges[0].node.categories;
+    const filters = categories.map((category) =>
+      <div key={category}>
         <label>
-          <input checked={this.props.visibility_filter[edge.node.id]}
-                 type="checkbox" name={edge.node.id} onChange={this.props.toggleCategoryFilter}/>
-          {` ${edge.node.name}`}
+          <input checked={this.props.visibility_filter[category]}
+                 type="checkbox" name={category} onChange={this.props.toggleCategoryFilter}/>
+          {` ${category}`}
         </label>
       </div>
     );

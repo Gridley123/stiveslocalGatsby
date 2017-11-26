@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from '../../components/Link';
+import {GLink} from '../../components/Link';
 import CentredDiv from '../../components/CenteredDiv';
 import AdvertiserDetails from './AdvertiserDetails';
 import Img from 'gatsby-image';
@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 padding-top: 118px;
 `;
 
-const BackLink = styled(Link)`
+const BackLink = styled(GLink)`
   font-size: 19px;
 `;
 
@@ -20,11 +20,13 @@ const JustifyDiv = styled.div`
 
 
 export default ({ data }) => {
-  const fm = data.jsonData;
-  const formattedAddress = data.jsonData.fields.formatted_address;
+  const fm = data.jsonData.edges[0].node;
+  console.log(data.imageURL);
+  console.log(fm);
+  const formattedAddress = null;
   return (
     <Wrapper>
-      <BackLink href={'/local-business-directory'}>
+      <BackLink to={'/local-business-directory'}>
         Go back to directory
       </BackLink>
       <CentredDiv>
@@ -61,32 +63,32 @@ export default ({ data }) => {
 
 export const query = graphql`
     query AdvertiserQuery($slug: String!, $imageURLRegex: String!) {
-        jsonData: localBusinessDirectoryJson(fields: {slug: {eq: $slug}}) {
-            id
-            fields {
-                slug
-            }
-            
-            categories
-            company_name
-            home_phone
-            email
-            facebook_url
-            instagram_url
-            website_url
-            detail
-            photo_url
-            home_address_line_1
-            home_address_line_2
-            town
-            postcode
-            latitude
-            longitude
-            twitter_url
-            mobile_phone
-            contact_first_name
-            contact_last_name
 
+        jsonData: allBusiness(filter: {fields: {slug: {eq: $slug}}}) {
+            edges {
+                node {
+                    fields {
+                        slug
+                    }
+                    categories
+                    company_name
+                    home_phone
+                    email
+                    facebook_url
+                    instagram_url
+                    website_url
+                    detail
+                    image
+                    home_address_line_1
+                    town
+                    postcode
+                    twitter_url
+                    mobile_phone
+                    home_address_line_2
+                    contact_first_name
+                    contact_last_name
+                }
+            }
         }
         imageURL: imageSharp(id: {regex: $imageURLRegex}) {
             id

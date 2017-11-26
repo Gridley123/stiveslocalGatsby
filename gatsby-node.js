@@ -3,65 +3,74 @@ const fs = require('fs');
 const slugCreator = require('slug');
 const rp = require('request-promise');
 const jsonWriter = require('./gatsby-node-json-writer');
+const dropRight = require('lodash/dropRight');
 
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
+
   const { createNodeField, createNode } = boundActionCreators;
   const pathRegEx = /\/local-business-directory\//;
   let slug;
   // if(node.internal.type==='MarkdownRemark' && pathRegEx.test(node.id)){
   //   jsonWriter(node);
   // }
-  if (node.internal.type === `MarkdownRemark` || node.internal.type === "LocalBusinessDirectoryJson") {
-    console.log(node);
-    const fileNode = getNode(node.parent);
-    const parsedFilePath = path.parse(fileNode.relativePath);
-    if (parsedFilePath.name !== `index` && parsedFilePath.dir !== ``) {
-      slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`
-    } else if (parsedFilePath.dir === ``) {
-      slug = `/${parsedFilePath.name}/`
-    } else {
-      slug = `/${parsedFilePath.dir}/`
-    }
-    // Add slug as a field on the node.
-    createNodeField({ node, name: `slug`, value: slug })
-  }
 
-  if (node.internal.type === `LocalBusinessDirectoryJson` && pathRegEx.test(node.id)) {
+  if (node.internal.type === `AllDataJson`) {
     //place jsonWriter (with parameter of'node') here
-    console.log("found");
-    const fm = node;
-    const homeAddress1 =
-      fm.home_address_line_1 || null;
 
-    const homeAddress2 =
-      fm.home_address_line_2 || null;
+    const { businesses } = node;
+    businesses.forEach((business) => {
+      business.id = slugCreator(business.company_name, { lower: true });
+      business.parent = " ";
+      business.children = [];
+      business.internal = {};
+      business.internal.contentDigest = business.company_name;
+      business.internal.type = "Business";
+      business.image = `${business.image}`;
+      createNode(
+        business
+      )
+    })
+    // console.log("found");
+    //
+    // const fm = node;
+    // const homeAddress1 =
+    //   fm.home_address_line_1 || null;
+    //
+    // const homeAddress2 =
+    //   fm.home_address_line_2 || null;
+    //
+    // const town =
+    //   fm.town || null;
+    //
+    // const postcode =
+    //   fm.postcode || null;
+    // const googleMapsAPIKey = "AIzaSyC1Cro1joS6Pqm0kx6vw4Z0yd1ajsODBuI";
+    // const mapURL = `https://www.google.com/maps/api/geocode/json?key=${googleMapsAPIKey}&address=${encodeURI(homeAddress1 || "")},${encodeURI(homeAddress2 || "")},${encodeURI(town || "")},${encodeURI(postcode || "")}`;
+    // const categories = node.businesses.map((business) => {
+    //   return business.categories;
+    // });
+    // categories.forEach((categoryList) => {
+    //   const trimmedCat = dropRight(categoryList);
+    //   console.log(trimmedCat);
+    //   trimmedCat.forEach((categoryName) => {
+    //     const id = `advertiser-category-${encodeURI(categoryName, {lower: true})}`;
+    //     createNode({
+    //       name: categoryName,
+    //       id,
+    //       parent: " ",
+    //       children: [],
+    //       internal: {
+    //         type: 'category',
+    //         contentDigest: categoryName,
+    //       }
+    //     });
+    //     console.log(id);
+    //     node.children.push(id);
+    //   });
+    //   resolve();
+    // });
 
-    const town =
-      fm.town || null;
-
-    const postcode =
-      fm.postcode || null;
-    const googleMapsAPIKey = "AIzaSyC1Cro1joS6Pqm0kx6vw4Z0yd1ajsODBuI";
-    const mapURL = `https://www.google.com/maps/api/geocode/json?key=${googleMapsAPIKey}&address=${encodeURI(homeAddress1 || "")},${encodeURI(homeAddress2 || "")},${encodeURI(town || "")},${encodeURI(postcode || "")}`;
-
-    const categories = node.categories;
-    categories.forEach((category) => {
-      console.log(category);
-      const id = `advertiser_category_${category.replace(" ", "")}`;
-      createNode({
-        name: category,
-        id,
-        parent: " ",
-        children: [],
-        internal: {
-          type: 'category',
-          contentDigest: category,
-        }
-      })
-      node.children.push(id);
-    });
-    return;
 
     // return new Promise((resolve) => {
     //   rp(mapURL).then(function (response) {
@@ -81,10 +90,28 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     //   });
     // });
 
-  } else {
-    return;
   }
 
+  if (node.internal.type === `MarkdownRemark`) {
+    const fileNode = getNode(node.parent);
+    const parsedFilePath = path.parse(fileNode.relativePath);
+    if (parsedFilePath.name !== `index` && parsedFilePath.dir !== ``) {
+      slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`
+    } else if (parsedFilePath.dir === ``) {
+      slug = `/${parsedFilePath.name}/`
+    } else {
+      slug = `/${parsedFilePath.dir}/`
+    }
+    // Add slug as a field on the node.
+    createNodeField({ node, name: `slug`, value: slug })
+  }
+
+  if (node.internal.type === "Business") {
+    const nodeName = node.company_name;
+    const slug = `/local-business-directory/${slugCreator(nodeName, { lower: true })}`;
+    // Add slug as a field on the node.
+    createNodeField({ node, name: `slug`, value: slug })
+  }
 }
 ;
 
@@ -100,35 +127,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       graphql(
         `
         {
-            advertisers: allLocalBusinessDirectoryJson(filter: {id: {regex: "/local-business-directory/"}}) {
+          advertisers: allBusiness {
             edges {
               node {
-              id
+                id
+                image
                 fields {
                   slug
                 }
-
-                  categories
-                  company_name
-                  home_phone
-                  email
-                  facebook_url
-                  instagram_url
-                  website_url
-                  detail
-                  photo_url
-                  home_address_line_1
-                  home_address_line_2
-                  town
-                  postcode
-                  latitude
-                  longitude
-                  twitter_url
-                  mobile_phone
-                  contact_first_name
-                  contact_last_name
-                  image
-
               }
             }
           }
@@ -177,8 +183,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             },
           })
         });
-
-        return
+        resolve();
       })
     )
   })

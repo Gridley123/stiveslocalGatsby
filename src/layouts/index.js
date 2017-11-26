@@ -13,7 +13,6 @@ class TemplateWrapper extends Component {
 
 
   render() {
-    console.log(this.header);
     const children = this.props.children;
     return (
       <div>

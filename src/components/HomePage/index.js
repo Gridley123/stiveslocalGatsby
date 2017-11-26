@@ -7,7 +7,7 @@ import FacebookFeed from './FacebookFeed';
 import Issues from './Issues';
 
 export default (props) => {
-  console.log(props.data);
+  console.log(props.data.landingPageImgSize);
   return (
     <div>
       <LandingPageImage sizes={props.data.landingPageImgSize.childImageSharp.sizes}/>

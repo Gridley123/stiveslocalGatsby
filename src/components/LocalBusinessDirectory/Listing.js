@@ -11,7 +11,7 @@ function Listing(props) {
   return (
     <Row>
       <Col xs={9} xsOffset={3}>
-        <SmallerLink to={props.data.fields.slug}>{props.data.company_name}</SmallerLink>
+        <SmallerLink to={props.data.node.fields.slug}>{props.data.node.company_name}</SmallerLink>
       </Col>
     </Row>
   );
