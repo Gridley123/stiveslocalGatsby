@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+
+media_folder: "src/images" # Folder where user uploaded files should go
+public_folder: "img"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "businesses"
+    label: "Businesses"
+    create: true
+    files:
+      - file: "src/local-business-directory/allData/localBusinessDB.json"
+        label:  "Businesses List"
+        name: "businesses_list"
+        create: true
+        fields:
+          - name: businesses
+            label: Businesses
+            widget: list
+            fields:
+              - {label: Company Name, name: company_name, widget: string}
+              - {label: Home Address Line 1, name: home_address_line_1, widget: string, required: false}
+              - {label: Town, name: town, widget: string, required: false}
+              - {label: Postcode, name: postcode, widget: string, required: false}
+              - {label: Detail, name: detail, widget: markdown, required: false}
+              - {label: Image, name: image, widget: image, required: false}
+              - {label: Categories, name: categories, widget: list}
+              - {label: Email Address, name: email, widget: string, required: false}
+              - {label: Facebook Page URL, name: facebook_url, widget: string, required: false}
+              - {label: Instagram Page URL, name: instagram_url, widget: string, required: false}
+              - {label: Website, name: website_url, widget: string, required: false}
+              - {label: Home Phone Number, name: home_phone, widget: string, required: false}
+              - {label: Mobile Phone Number, name: mobile_phone, widget: string, required: false}
+
+
+

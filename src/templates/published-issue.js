@@ -32,12 +32,6 @@ class Embed extends React.Component {
     super(props);
   }
 
-  componentWillMount() {
-    const script = document.createElement("script");
-    script.src = "//e.issuu.com/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-  }
 
   render() {
     return (

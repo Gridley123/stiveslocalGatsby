@@ -91,7 +91,6 @@ export const query = graphql`
             }
         }
         imageURL: imageSharp(id: {regex: $imageURLRegex}) {
-            id
             resolutions(
                 width: 400
             ) {

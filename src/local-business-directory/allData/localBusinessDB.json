@@ -1,0 +1,765 @@
+{
+  "businesses": [
+    {
+      "categories": [
+        "Food",
+        "Catering Services"
+      ],
+      "company_name": "A.L.P Catering",
+      "home_phone": "07562839634",
+      "email": "daniel@alpcatering.co.uk",
+      "facebook_url": "https://www.facebook.com/alpcatering/",
+      "instagram_url": "http://www.instagram.com/alpcatering",
+      "website_url": "http://www.alpcatering.co.uk",
+      "detail": "Dinner Parties\nBuffets\nPicnic Hampers\nChef Hire\n\n\nHome-made catering from dinner parties at home or your holiday home., buffets for any occasion, picnic hampers, chef hire and deep cleaning.  Based in Cornwall with over 14 years experience we pride ourselves in using Cornish produce wherever possible to give the highest quality dining experience.",
+      "image": "alp-catering.png"
+    },
+    {
+      "categories": [
+        "Pets",
+        "Vets"
+      ],
+      "company_name": "Animal Vets",
+      "home_address_line_1": "18 Fore Street",
+      "town": "Hayle",
+      "postcode": "TR27 4DY",
+      "home_phone": "01736755555",
+      "website_url": "http://www.animalvets.co.uk",
+      "image": "animal-vets.png"
+    },
+    {
+      "categories": [
+        "Courses",
+        "Events"
+      ],
+      "company_name": "Barnoon Workshop",
+      "home_address_line_1": "Clodgey View",
+      "town": "St Ives",
+      "postcode": "TR26 IJG",
+      "facebook_url": "https://www.facebook.com/barnoonworkshop/",
+      "twitter_url": "https://twitter.com/BarnoonWorkshop",
+      "website_url": "http://www.barnoonworkshop.co.uk",
+      "detail": "Creative Courses\nFrom half day craft sessions to 4 week courses! Sculpture, Painting, Guitar, Drawing, and\nmore. Also private craft parties! Take a look at our website for details!",
+      "image": "barnoon-workshop.png"
+    },
+    {
+      "categories": [
+        "Cafes and Coffee Shops",
+        "Restaurants"
+      ],
+      "company_name": "Brewhouse Cafe",
+      "home_address_line_1": "Trewidden Road",
+      "town": "St Ives",
+      "postcode": "TR26 2BX",
+      "mobile_phone": "07702 311595",
+      "home_phone": "01736 793467",
+      "email": "marco@stives-brewery.co.uk",
+      "website_url": "http://www.stives-brewery.co.uk",
+      "image": "brewhouse-cafe.png"
+    },
+    {
+      "categories": [
+        "Gardens & Horticulture"
+      ],
+      "company_name": "BHGS Hayle",
+      "home_address_line_1": "Unit 4",
+      "home_address_line_2": "Guildford Road Industrial Estate",
+      "town": "Hayle",
+      "postcode": "TR27 4QZ",
+      "home_phone": "01736 755766",
+      "email": "sales.hayle@bhgsltd.co.uk",
+      "website_url": "http://www.jfcmonro.co.uk",
+      "detail": "Serving horticulture to trade and public.\nSeasonal specials available now.\nFish blood and bone.\nGrowmore granules.\nPelleted poultry manure.\nIndividual plant protection covers.\nHorticultural fleece 18g.\nHorticultural disinfectants and glasshouse cleaners.\nCompost pots and trays.\nFeeds and fertilisers.\nTools.\nIrrigation and accessories.\nBird food.\nGarden furniture.\nPest control.\nClothing and footwear.\n",
+      "image": "bhgs-hayle.png"
+    },
+    {
+      "categories": [
+        "Builders",
+        "Roofers"
+      ],
+      "company_name": "Build St Ives",
+      "mobile_phone": "07513 505447",
+      "email": "buildstives@hotmail.com",
+      "website_url": "http://www.buildstives.com",
+      "image": "build-st-ives.png"
+    },
+    {
+      "categories": [
+        "Health",
+        "Massage"
+      ],
+      "company_name": "Charlotte Griffith Massage Therapy",
+      "home_address_line_1": "Karina Zimmer Hair Design / Carbis Bay Barbers",
+      "town": "Carbis Day",
+      "postcode": "TR26 2SX",
+      "mobile_phone": "07765483904",
+      "home_phone": "01736602275",
+      "email": "griffithcharlotte@hotmail.com",
+      "facebook_url": "https://www.facebook.com/charlottegriffithholisticmassage/",
+      "image": "charlotte-griffith-massage-therapy.png"
+    },
+    {
+      "categories": [
+        "Cleaning Services",
+        "Window Cleaners"
+      ],
+      "company_name": "Cleaning Revolution",
+      "mobile_phone": "07933525118",
+      "email": "garyburrell3951@gmail.com",
+      "image": "cleaning-revolution.png"
+    },
+    {
+      "categories": [
+        "Legal",
+        "Solicitors"
+      ],
+      "company_name": "Coodes Solicitors",
+      "home_address_line_1": "The Guildhall",
+      "home_address_line_2": "Street-an-Pol",
+      "town": "St Ives",
+      "postcode": "TR26 2DS",
+      "home_phone": "01736 339333",
+      "email": "info@coodes.co.uk",
+      "website_url": "http://www.coodes.co.uk",
+      "image": "coodes-solicitors.png"
+    },
+    {
+      "categories": [
+        "Cleaning Services"
+      ],
+      "company_name": "Clean Image",
+      "mobile_phone": "07867576826",
+      "home_phone": "01736 757812",
+      "email": "ian@cleanimage-ipc.co.uk",
+      "website_url": "http://www.cleanimage-ipc.co.uk",
+      "image": "clean-image.png"
+    },
+    {
+      "categories": [
+        "Health",
+        "Chiropractors"
+      ],
+      "company_name": "Cornwall Chiropractic Clinic",
+      "home_address_line_1": "21 Foundry Square",
+      "town": "Hayle",
+      "postcode": "TR27 4HH",
+      "home_phone": "01736 759088",
+      "email": "enquiries@cornwallclinic.co.uk",
+      "facebook_url": "https://www.facebook.com/cornwallchiropracticclinic",
+      "website_url": "http://www.cornwallclinic.co.uk/",
+      "image": "cornwall-chiropractic-clinic.png"
+    },
+    {
+      "categories": [
+        "Restaurants",
+        "Activities"
+      ],
+      "company_name": "Country Skittles",
+      "home_address_line_1": "Townshend",
+      "town": "Hayle",
+      "postcode": "TR27 6ER",
+      "home_phone": "01736850209",
+      "email": "bowl@countryskittles.com",
+      "website_url": "http://www.countryskittles.com",
+      "image": "country-skittles.png"
+    },
+    {
+      "categories": [
+        "Accommodation"
+      ],
+      "company_name": "Cottage Boutique",
+      "home_address_line_1": "Unit 3",
+      "home_address_line_2": "The Old Forge",
+      "town": "Lelant",
+      "postcode": "TR27 6JG",
+      "mobile_phone": "07980393916",
+      "home_phone": "01736 796100",
+      "email": "info@cottage-boutique.co.uk",
+      "website_url": "http://www.cottage-boutique.co.uk",
+      "image": "cottage-boutique.png"
+    },
+    {
+      "categories": [
+        "Window Cleaners"
+      ],
+      "company_name": "David Morris Window Cleaning",
+      "mobile_phone": "07894204323",
+      "home_phone": "01736 756394",
+      "website_url": "http://www.davidmorriswindowcleaning.co.uk",
+      "image": "david-morris-window-cleaning.png"
+    },
+    {
+      "categories": [
+        "Pets",
+        "Dog Sitting & Boarding"
+      ],
+      "company_name": "Doggy Day Care Cornwall",
+      "home_phone": "01736 317123",
+      "email": "info@doggydaycarecornwall.co.uk",
+      "facebook_url": "http://www.facebook.com/doggydaycarecornwall",
+      "website_url": "http://www.doggydaycarecornwall.co.uk",
+      "detail": "Luxury home dog boarding and sitting in St Erth. Doggy Day Care Cornwall is the region's first professional luxury dog day care and home boarding solution.",
+      "image": "doggy-day-care-cornwall.png"
+    },
+    {
+      "categories": [
+        "Interior Design",
+        "Kitchens"
+      ],
+      "company_name": "George Robinson Kitchens and Interiors",
+      "home_phone": "01736367369",
+      "email": "info@georgerobinsonkitchens.co.uk",
+      "website_url": "http://www.georgerobinsonkitchens.co.uk",
+      "image": "george-robinson-kitchens-and-interiors.png"
+    },
+    {
+      "categories": [
+        "Health",
+        "Courses",
+        "Fitness",
+        "Personal Trainers"
+      ],
+      "company_name": "Empirical Fitness",
+      "contact_first_name": "Will",
+      "contact_last_name": "Nankervis",
+      "home_address_line_1": "St Ives RFC",
+      "town": "St Ives",
+      "postcode": "TR26 1ER",
+      "home_phone": "07715 363882",
+      "email": "willnankervis@empiricalfitness.email",
+      "facebook_url": "http://facebook.com/empiricalfitnesscornwall",
+      "instagram_url": "http://instagram.com/empirical_fitness",
+      "website_url": "http://empirical-fitness.co.uk/",
+      "image": "empirical-fitness.png"
+    },
+    {
+      "categories": [
+        "Gardens & Horticulture"
+      ],
+      "company_name": "Hayle Plants",
+      "home_address_line_1": "Treglisson",
+      "home_address_line_2": "Wheal Alfred Road",
+      "town": "Hayle",
+      "postcode": "TR27 5JT",
+      "mobile_phone": "07817 435705",
+      "home_phone": "01736 752888",
+      "email": "ejmichell@btconnect.com",
+      "facebook_url": "https://www.facebook.com/Hayle-Plants-189795387733658/",
+      "image": "hayle-plants.png"
+    },
+    {
+      "categories": [
+        "Accountants & Bookkeepers"
+      ],
+      "company_name": "Greenwood Wilson Chartered Tax Advisors & Accountants",
+      "home_address_line_1": "The Old School",
+      "home_address_line_2": "Stennack",
+      "town": "St Ives",
+      "postcode": "TR26 1QU",
+      "home_phone": "01736 795753",
+      "email": "office@greenwoodwilson.co.uk",
+      "website_url": "http://www.greenwoodwilson.co.uk",
+      "image": "greenwood-wilson-chartered-tax-advisors-and-accountants.png"
+    },
+    {
+      "categories": [
+        "Gardens & Horticulture",
+        "Landscaping"
+      ],
+      "company_name": "Hortus Design & Landscaping",
+      "mobile_phone": "07867 973911",
+      "home_phone": "01736 758557",
+      "email": "chris@hortusdl.co.uk",
+      "website_url": "http://www.hortusdl.co.uk",
+      "image": "hortus-design-and-landscaping.png"
+    },
+    {
+      "categories": [
+        "Travel Agents",
+        "Accommodation"
+      ],
+      "company_name": "Holiday Owners Inc",
+      "home_phone": "01736 449540",
+      "email": "info@holidayownersinc.co.uk",
+      "website_url": "http://www.cornwalldevoncottages.co.uk",
+      "detail": "Advertise your Cornwall or Devon Holiday Home.\n\n\nCheck out and register your holiday home on www.holidayownersinc.co.uk/register-benefits\n\n\nNo extra charges to Owners or Guests - save Â£Â£Â£.\n\n\nSpecial rates for multiple properties.\n",
+      "image": "holiday-owners-inc.png"
+    },
+    {
+      "categories": [
+        "Gardens & Horticulture",
+        "Landscaping"
+      ],
+      "company_name": "JC Landscapes",
+      "mobile_phone": "07973832260",
+      "email": "jclandscapes@hotmail.co.uk",
+      "website_url": "http://www.j-c-landscapes.co.uk",
+      "detail": "General garden maintenance to complete landscapes, decking, turfing, fencing & paving.\nFree no-obligation quotes.",
+      "image": "jc-landscapes.png"
+    },
+    {
+      "categories": [
+        "Electricians",
+        "Solar Energy"
+      ],
+      "company_name": "Matley Electrical & Solar",
+      "contact_first_name": "Stuart",
+      "contact_last_name": "Matley-Jones",
+      "mobile_phone": "07787176829",
+      "home_phone": "01736 799170",
+      "email": "info@stiveselectricians.co.uk",
+      "website_url": "http://www.stiveselectricians.co.uk/",
+      "image": "matley-electrical-and-solar.png"
+    },
+    {
+      "categories": [
+        "Gardens & Horticulture"
+      ],
+      "company_name": "Lavenders Blue Garden Nursery",
+      "home_address_line_1": "1 Penpol Avenue",
+      "town": "Hayle",
+      "postcode": "TR27 4AQ",
+      "home_phone": "01736 754844",
+      "facebook_url": "https://www.facebook.com/lavendersbluegardennursery/",
+      "twitter_url": "https://twitter.com/LavendersblueGN",
+      "website_url": "http://www.lavendersbluenursery.co.uk",
+      "image": "lavenders-blue-garden-nursery.png"
+    },
+    {
+      "categories": [
+        "Joiners & Cabinetmakers"
+      ],
+      "company_name": "John Andrews Cabinetmakers & Joiners",
+      "mobile_phone": "07765341616",
+      "email": "johnandrews123@btinternet.com",
+      "website_url": "http://www.johnandrewsjoinery.co.uk",
+      "image": "john-andrews-cabinetmakers-and-joiners.png"
+    },
+    {
+      "categories": [
+        "Childcare",
+        "Education & Schools"
+      ],
+      "company_name": "Little Seahorses Childcare & Education",
+      "home_address_line_1": "St Ives Children's Centre",
+      "home_address_line_2": "Trenwith Burrows",
+      "town": "St Ives",
+      "postcode": "TR26 1DJ",
+      "home_phone": "01736 794222",
+      "email": "littleseahorseschildcare@yahoo.co.uk",
+      "website_url": "http://www.littleseahorses.co.uk",
+      "image": "little-seahorses-childcare-and-education.png"
+    },
+    {
+      "categories": [
+        "Care",
+        "Jobs & Recruiting"
+      ],
+      "company_name": "Nursefinders",
+      "home_address_line_1": "72 Lemon Street",
+      "town": "Truro",
+      "postcode": "TR1 2PN",
+      "home_phone": "01872 270999",
+      "email": "may@nursefinders.co.uk",
+      "website_url": "http://www.nursefindersplus.co.uk",
+      "image": "nursefinders.png"
+    },
+    {
+      "categories": [
+        "Builders"
+      ],
+      "company_name": "Ocean Building",
+      "mobile_phone": "07495130777",
+      "home_phone": "01736 796812",
+      "email": "info@oceanbuildingcompany.co.uk",
+      "website_url": "http://www.oceanbuildingcompany.co.uk",
+      "image": "ocean-building.png"
+    },
+    {
+      "categories": [
+        "Locksmiths"
+      ],
+      "company_name": "MPB Lock & Key",
+      "mobile_phone": "07450527208",
+      "home_phone": "01736 800984",
+      "website_url": "http://www.mpblockandkey-stives.co.uk/",
+      "image": "mpb-lock-and-key.png"
+    },
+    {
+      "categories": [
+        "Drain Clearance"
+      ],
+      "company_name": "Ocean Drainage",
+      "mobile_phone": "07495130777",
+      "home_phone": "01736 796812",
+      "email": "info@oceandrainagecompany.co.uk",
+      "image": "ocean-drainage.png"
+    },
+    {
+      "categories": [
+        "Events",
+        "Activities"
+      ],
+      "company_name": "Paradise Park",
+      "home_address_line_1": "Paradise Park",
+      "town": "Hayle",
+      "postcode": "TR27 4HY",
+      "home_phone": "01736 758720",
+      "website_url": "http://www.paradisepark.org.uk",
+      "image": "paradise-park.png"
+    },
+    {
+      "categories": [
+        "Courses",
+        "Activities",
+        "Equestrian"
+      ],
+      "company_name": "Penhalwyn Trekking Centre & School",
+      "town": "Halsetown",
+      "postcode": "TR26 3AN",
+      "home_phone": "01736 796461",
+      "image": "penhalwyn-trekking-centre-and-school.png"
+    },
+    {
+      "categories": [
+        "Joiners & Cabinetmakers",
+        "Interior Design"
+      ],
+      "company_name": "Quality Interiors",
+      "mobile_phone": "07588 719474",
+      "home_phone": "01736 794981",
+      "website_url": "http://www.quality-interiors.org",
+      "image": "quality-interiors.png"
+    },
+    {
+      "categories": [
+        "Restaurants",
+        "Takeaway Food"
+      ],
+      "company_name": "Rajpoot Indian Restaurant and Takeaway",
+      "home_address_line_1": "5a Gabriel Street",
+      "town": "St Ives",
+      "postcode": "TR26 2LU",
+      "home_phone": "01736795307",
+      "website_url": "http://www.rajpootstives.co.uk",
+      "image": "rajpoot-indian-restaurant-and-takeaway.png"
+    },
+    {
+      "categories": [
+        "Food"
+      ],
+      "company_name": "Riverford Organic Farmers",
+      "home_phone": "01208220341",
+      "website_url": "http://www.riverford.co.uk",
+      "detail": "Organic Vegetable Boxes Delivered",
+      "image": "riverford-organic-farmers.png"
+    },
+    {
+      "categories": [
+        "Uncategorized",
+        "Funeral Directors & Undertakers"
+      ],
+      "company_name": "Saints Funeral Services",
+      "home_address_line_1": "Parc Avenue",
+      "town": "St Ives",
+      "postcode": "TR26 2DN",
+      "mobile_phone": "07527 795674",
+      "home_phone": "01736 447070",
+      "email": "info@saintsfunerals.co.uk",
+      "website_url": "http://www.saintsfunerals.co.uk",
+      "image": "saints-funeral-services.png"
+    },
+    {
+      "categories": [
+        "Bookshops"
+      ],
+      "company_name": "St Ives Bookseller",
+      "home_address_line_1": "2 Fore Street",
+      "town": "St Ives",
+      "postcode": "TR26 1AB",
+      "home_phone": "01736 796676",
+      "email": "stivesbookseller@mabecronbooks.co.uk",
+      "twitter_url": "http://www.twitter.com/stivesbooks",
+      "image": "st-ives-bookseller.png"
+    },
+    {
+      "categories": [
+        "Clubs & Societies",
+        "Community",
+        "Activities",
+        "Sports"
+      ],
+      "company_name": "St Ives Bowling Club",
+      "contact_first_name": "Edward",
+      "contact_last_name": "Stevens",
+      "home_address_line_1": "The Belyars",
+      "home_address_line_2": "Belyars Lane",
+      "town": "St Ives",
+      "postcode": "TR26 2BT",
+      "home_phone": "01736794279",
+      "facebook_url": "https://www.facebook.com/St-Ives-Bowls-Club-1685931568320509/",
+      "detail": "St. Ives Bowling Club is a well established club situated in the Belyars Trenwith Lane. \nThe club provides social and competitive bowling throughout the year.\n(short mat during the Winter months)\nThe new outdoor season started in April.\nNew members and those wishing to try bowling are most welcome.\nFor further information contact:\nEdward Stevens 01736 794279 Derek Murrish 01736 797438 Margaret Seddon 01736 719419",
+      "image": "st-ives-bowling-club.png"
+    },
+    {
+      "categories": [
+        "Clubs & Societies",
+        "Health"
+      ],
+      "company_name": "St Ives Breathers Club",
+      "home_address_line_1": "St Anta Church Hall",
+      "home_address_line_2": "Porthrepta Road",
+      "town": "Carbis Bay",
+      "postcode": "TR26 2LD",
+      "home_phone": "01736 756729",
+      "image": "st-ives-breathers-club.png"
+    },
+    {
+      "categories": [
+        "Clubs & Societies",
+        "Health",
+        "Community"
+      ],
+      "company_name": "St Ives, Carbis Bay & Lelant Dementia Action Alliance",
+      "contact_first_name": "Chris",
+      "home_phone": "07851111496",
+      "email": "cmuxlow@aol.com",
+      "image": "st-ives-carbis-bay-and-lelant-dementia-action-alliance.png"
+    },
+    {
+      "categories": [
+        "Community",
+        "Transport"
+      ],
+      "company_name": "St Ives Community Transport",
+      "mobile_phone": "07572 586675",
+      "home_phone": "01872 266886",
+      "image": "st-ives-community-transport.png"
+    },
+    {
+      "categories": [
+        "Groceries",
+        "Markets"
+      ],
+      "company_name": "St Ives Farmers' Market",
+      "home_address_line_1": "Guildhall",
+      "home_address_line_2": "Street-an-Pol",
+      "town": "St Ives",
+      "detail": "Every Thursday from 9:30am to 2:00pm",
+      "image": "st-ives-farmers-market.png"
+    },
+    {
+      "categories": [
+        "Motors & Vehicles"
+      ],
+      "company_name": "St Ives Motor Company",
+      "home_address_line_1": "Lower Tregarthen",
+      "home_address_line_2": "Long Rock",
+      "town": "Penzance",
+      "postcode": "TR20 8LD",
+      "home_phone": "01736 711211",
+      "email": "info@stivesmotor.co.uk",
+      "website_url": "http://www.stivesmotor.co.uk",
+      "detail": "Bespoke vehicles sales and sourcing\nServicing and MOT\nFull valeting and bodyshop",
+      "image": "st-ives-motor-company.png"
+    },
+    {
+      "categories": [
+        "Travel Agents"
+      ],
+      "company_name": "St Ives Travel",
+      "home_address_line_1": "Station Building",
+      "town": "St Ives",
+      "postcode": "TR26 2EQ",
+      "home_phone": "01736 795908",
+      "email": "sales@stivestravel.com",
+      "image": "st-ives-travel.png"
+    },
+    {
+      "categories": [
+        "Conservatories",
+        "Windows",
+        "Doors"
+      ],
+      "company_name": "St. Ives Windows",
+      "home_phone": "01736 798964",
+      "website_url": "http://www.stiveswindows.co.uk",
+      "image": "st-ives-windows.png"
+    },
+    {
+      "categories": [
+        "Equipment Hire"
+      ],
+      "company_name": "Star Equipment Hire",
+      "home_address_line_1": "Unit 4c",
+      "home_address_line_2": "Penbeagle Industrial Estate",
+      "town": "St Ives",
+      "postcode": "TR26 2JH",
+      "home_phone": "01736 791685",
+      "website_url": "http://www.stiveshire.co.uk",
+      "image": "star-equipment-hire.png"
+    },
+    {
+      "categories": [
+        "Clubs & Societies",
+        "Community"
+      ],
+      "company_name": "The Probus Club of St. Ives",
+      "contact_first_name": "David",
+      "contact_last_name": "Prowse",
+      "home_address_line_1": "Carbis Bay Hotel",
+      "town": "Carbis Bay",
+      "postcode": "TR26 2NP",
+      "home_phone": "01736 438904",
+      "detail": " The purpose of a Probus Club is to provide regular meetings for retired and semi-retired men to meet others with similar interests.\nThe St. Ives Club meet on the second Monday of every month (except August) at Carbis Bay Hotel at 10.00am.\nOur guest speakers cover a wide range of subjects.  These have included talks on Fishing, Mining, Travel, Exploration, Berlin during the Cold War and Crime Scene Investigation.\nVisitors to our meetings would be most welcome.\n\n\nFor further information contact: David Prowse\n01736 438904\nEric Curnow\n01736 795280\nDavid Anstey\n01736 794483",
+      "image": "the-probus-club-of-st-ives.png"
+    },
+    {
+      "categories": [
+        "Laundry",
+        "Linen Hire"
+      ],
+      "company_name": "Star Linen Hire & Laundry Services Ltd",
+      "home_address_line_1": "Unit 4b",
+      "home_address_line_2": "Penbeagle Industrial Estate",
+      "town": "St Ives",
+      "postcode": "TR26 2JH",
+      "home_phone": "01736 791685",
+      "website_url": "http://www.starlinenhirestives.co.uk",
+      "image": "star-linen-hire-and-laundry-services-ltd.png"
+    },
+    {
+      "categories": [
+        "Storage"
+      ],
+      "company_name": "Store City",
+      "home_phone": "01736 711211",
+      "image": "store-city.png"
+    },
+    {
+      "categories": [
+        "Beauty Therapy"
+      ],
+      "company_name": "The Water's Edge Retreat",
+      "email": "thewatersedgeretreat@outlook.com",
+      "detail": "Beauty, Holistic and Wellness.\nOpening April 2017 in Hayle.\nFull range of therapies, room rental space available.",
+      "image": "the-waters-edge-retreat.png"
+    },
+    {
+      "categories": [
+        "Joiners & Cabinetmakers"
+      ],
+      "company_name": "Thomsons Bespoke Joinery, Cabinet Makers & Woodcarvers",
+      "home_phone": "01209 211188",
+      "email": "enquiries@thomsonsjoinery.co.uk",
+      "website_url": "http://www.thomsonsjoinery.co.uk/",
+      "image": "thomsons-bespoke-joinery-cabinet-makers-and-woodcarvers.png"
+    },
+    {
+      "categories": [
+        "Legal"
+      ],
+      "company_name": "TP Wills & Probate",
+      "mobile_phone": "7900323939",
+      "home_phone": "01736 755125",
+      "email": "enquiries@tpwills.co.uk",
+      "website_url": "http://www.tpwills.co.uk",
+      "image": "tp-wills-and-probate.png"
+    },
+    {
+      "categories": [
+        "Interior Design",
+        "Furniture & Furnishings"
+      ],
+      "company_name": "Too Chy Chy",
+      "home_address_line_1": "The Studio",
+      "home_address_line_2": "Beersheba Farm",
+      "town": "Lelant",
+      "postcode": "TR26 3HF",
+      "mobile_phone": "07795 284356",
+      "email": "vicki@toochychy.co.uk",
+      "facebook_url": "http://www.facebook.com/toochychy",
+      "website_url": "http://www.toochychy.co.uk/",
+      "image": "too-chy-chy.png"
+    },
+    {
+      "categories": [
+        "Cafes and Coffee Shops",
+        "Restaurants"
+      ],
+      "company_name": "Una Kitchen",
+      "home_address_line_1": "Una",
+      "home_address_line_2": "Laity Lane",
+      "town": "Carbis Bay",
+      "postcode": "TR26 3HW",
+      "home_phone": "01736 257 000",
+      "email": "hello@unastives.co.uk",
+      "website_url": "http://www.unastives.co.uk",
+      "image": "una-kitchen.png"
+    },
+    {
+      "categories": [
+        "Spas"
+      ],
+      "company_name": "Una Spa",
+      "home_address_line_1": "Una",
+      "home_address_line_2": "Laity Lane",
+      "town": "Carbis Bay",
+      "postcode": "TR26 3HW",
+      "home_phone": "01736 792907",
+      "email": "una.spa@spieziaorganics.com",
+      "website_url": "http://www.unastives.co.uk",
+      "image": "una-spa.png"
+    },
+    {
+      "categories": [
+        "Funeral Directors & Undertakers"
+      ],
+      "company_name": "W J Winn Funeral Directors",
+      "home_address_line_1": "Trenwith Terrace",
+      "town": "St Ives",
+      "postcode": "TR26 1QE",
+      "home_phone": "01736 793029",
+      "image": "w-j-winn-funeral-directors.png"
+    },
+    {
+      "categories": [
+        "Health",
+        "Fitness"
+      ],
+      "company_name": "WeightWatchers",
+      "contact_first_name": "Jan",
+      "contact_last_name": "Sumpter",
+      "home_address_line_1": "Methodist Church Hall",
+      "town": "Hayle",
+      "postcode": "TR27 4JU",
+      "mobile_phone": "07531987438",
+      "detail": "2 Plans\nSmartpoints or No Count\n\n\nMeetings Held:\n\n\nPenzance\nMonday 6pm Clarence House\nThursday 10am YMCA\n\n\nHayle\nTuesday 6pm Methodist Church Hall\nWednesday 10am Passmore Edwards Institute",
+      "image": "weightwatchers.png"
+    },
+    {
+      "categories": [
+        "Groceries",
+        "Food"
+      ],
+      "company_name": "Wiltshire Farm Foods",
+      "home_phone": "01326 378444",
+      "website_url": "http://www.wiltshirefarmfoods.com",
+      "image": "wiltshire-farm-foods.png"
+    },
+    {
+      "categories": [
+        "Windows",
+        "Blinds & Awnings"
+      ],
+      "company_name": "Zodiac Interiors",
+      "home_address_line_1": "154 Penmere Drive",
+      "town": "Newquay",
+      "postcode": "TR7 1RX",
+      "home_phone": "01637 817862",
+      "email": "sales@zodiacinteriors.co.uk",
+      "website_url": "http://www.zodiacinteriors.co.uk",
+      "image": "zodiac-interiors.png"
+    }
+  ]
+}
