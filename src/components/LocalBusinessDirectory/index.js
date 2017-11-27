@@ -4,7 +4,7 @@ import CentredDiv from '../CenteredDiv';
 import {Col, Grid, Row} from 'react-flexbox-grid';
 import Listing from './Listing';
 import Filter from './Filter';
-import mapValues from 'lodash/mapvalues'
+import mapValues from 'lodash/mapValues'
 import every from 'lodash/every';
 import values from 'lodash/values';
 
