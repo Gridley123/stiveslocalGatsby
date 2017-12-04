@@ -7,7 +7,6 @@
 
 
     exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-
       const { createNodeField, createNode } = boundActionCreators;
       const pathRegEx = /\/local-business-directory\//;
       let slug;

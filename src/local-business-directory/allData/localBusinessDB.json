@@ -1,5 +1,4 @@
-{
-  "businesses": [
+{"businesses": [
     {
       "categories": [
         "Food",
@@ -642,8 +641,7 @@
       ],
       "company_name": "The Water's Edge Retreat",
       "email": "thewatersedgeretreat@outlook.com",
-      "detail": "Beauty, Holistic and Wellness.\nOpening April 2017 in Hayle.\nFull range of therapies, room rental space available.",
-      "image": "the-waters-edge-retreat.png"
+      "detail": "Beauty, Holistic and Wellness.\nOpening April 2017 in Hayle.\nFull range of therapies, room rental space available."
     },
     {
       "categories": [
@@ -660,7 +658,7 @@
         "Legal"
       ],
       "company_name": "TP Wills & Probate",
-      "mobile_phone": "7900323939",
+      "mobile_phone": "07900323939",
       "home_phone": "01736 755125",
       "email": "enquiries@tpwills.co.uk",
       "website_url": "http://www.tpwills.co.uk",
