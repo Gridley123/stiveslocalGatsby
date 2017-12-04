@@ -4,20 +4,19 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
   },
-  plugins: ['gatsby-transformer-json', 'gatsby-transformer-excel', 'gatsby-transformer-sharp', 'gatsby-plugin-sharp', `gatsby-plugin-react-helmet`, 'gatsby-transformer-remark', `gatsby-plugin-styled-components`,
+  plugins: [{
+    resolve: `gatsby-source-contentful`,
+    options: {
+      spaceId: `y0b96oybzoi1`,
+      accessToken: `a276b203cbeb6a4e43e3ba20d0aecd6d16b37dc37ffab567c4b1ff101ba55569`,
+    },
+  }, 'gatsby-transformer-json', 'gatsby-transformer-excel', 'gatsby-transformer-sharp', 'gatsby-plugin-sharp', `gatsby-plugin-react-helmet`, 'gatsby-transformer-remark', `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
         path: `${__dirname}/src/`,
       }
-    },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: `y0b96oybzoi1`,
-        accessToken: `a276b203cbeb6a4e43e3ba20d0aecd6d16b37dc37ffab567c4b1ff101ba55569`,
-      },
     },
     {
       resolve: `gatsby-source-filesystem`,
