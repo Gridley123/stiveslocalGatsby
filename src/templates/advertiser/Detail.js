@@ -15,8 +15,8 @@ export default (props) =>  {
 
   const advertiserData = props.advertiserData;
 
-  const detail = advertiserData.detail || null;
-
+  const detail = advertiserData.detail ? advertiserData.detail.detail : null;
+  console.log(detail);
   const detailTrimmed = detail ? detail.replace(/\s{2,}/, " ") : null;
 
   return (

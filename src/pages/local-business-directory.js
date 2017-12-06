@@ -11,22 +11,35 @@ export default ({ data }) => {
 
 export const businessDirectory = graphql`
     query allBusinessDirectory {
-        allBusiness(sort: {fields: [company_name]}) {
+        allBusiness: allContentfulBusiness(sort: {fields: [company_name]}) {
             edges {
                 node {
                     id
                     fields {
                         slug
                     }
-                    categories
+                    categories {
+                        name
+                    }
                     company_name
                     home_phone
                     email
                     facebook_url
                     instagram_url
                     website_url
-                    detail
-                    image
+                    detail {
+                        detail
+                    }
+                    image {
+                        id
+                        sizes {
+                            base64
+                            aspectRatio
+                            src
+                            srcSet
+                            sizes
+                        }
+                    }
                     home_address_line_1
                     town
                     postcode
@@ -38,11 +51,10 @@ export const businessDirectory = graphql`
                 }
             }
         }
-        categories: allCategoriesJson {
+        categories: allContentfulCategories(sort: {fields: [name]}) {
             edges {
                 node {
-                    id
-                    categories
+                    name
                 }
             }
         }

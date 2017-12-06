@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {GLink} from '../../components/Link';
 import CentredDiv from '../../components/CenteredDiv';
 import AdvertiserDetails from './AdvertiserDetails';
-import Img from 'gatsby-image';
+import Image from 'gatsby-image';
 import {Col, Grid, Row} from 'react-flexbox-grid';
 
 const Wrapper = styled.div`
@@ -20,10 +20,9 @@ const JustifyDiv = styled.div`
 
 
 export default ({ data }) => {
-  const fm = data.jsonData.edges[0].node;
-  console.log(data.imageURL);
-  console.log(fm);
+  const fm = data.jsonData;
   const formattedAddress = null;
+  console.log(fm);
   return (
     <Wrapper>
       <BackLink to={'/local-business-directory'}>
@@ -50,7 +49,7 @@ export default ({ data }) => {
           </Col>
           <Col md={6} xs={12}>
             <JustifyDiv>
-              {data.imageURL ? <Img resolutions={data.imageURL.resolutions}/> : null}
+              <Image resolutions={fm.image.resolutions} />
             </JustifyDiv>
 
           </Col>
@@ -62,41 +61,44 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-    query AdvertiserQuery($slug: String!, $imageURLRegex: String!) {
+    query AdvertiserQuery($slug: String!) {
 
-        jsonData: allBusiness(filter: {fields: {slug: {eq: $slug}}}) {
-            edges {
-                node {
-                    fields {
-                        slug
-                    }
-                    categories
-                    company_name
-                    home_phone
-                    email
-                    facebook_url
-                    instagram_url
-                    website_url
-                    detail
-                    image
-                    home_address_line_1
-                    town
-                    postcode
-                    twitter_url
-                    mobile_phone
-                    home_address_line_2
-                    contact_first_name
-                    contact_last_name
+        jsonData: contentfulBusiness(fields: {slug: {eq: $slug}}) {
+            id
+            fields {
+                slug
+            }
+            categories {
+                name
+            }
+            company_name
+            home_phone
+            email
+            facebook_url
+            instagram_url
+            website_url
+            detail {
+                detail
+            }
+            image {
+                id
+                resolutions(width:400) {
+                    base64
+                    aspectRatio
+                    width
+                    height
+                    src
+                    srcSet
                 }
             }
-        }
-        imageURL: imageSharp(id: {regex: $imageURLRegex}) {
-            resolutions(
-                width: 400
-            ) {
-                ...GatsbyImageSharpResolutions
-            }
-
+            home_address_line_1
+            town
+            postcode
+            twitter_url
+            mobile_phone
+            home_address_line_2
+            contact_first_name
+            contact_last_name
         }
     }
 `;

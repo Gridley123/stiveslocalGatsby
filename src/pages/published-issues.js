@@ -2,6 +2,7 @@ import React from 'react';
 import {makeResponsive, SpringGrid} from 'react-stonecutter';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
+import Image from 'gatsby-image';
 
 
 const Grid = makeResponsive(SpringGrid, {
@@ -20,11 +21,10 @@ display: flex;
 justify-content: center;
 `;
 
-const Image = styled.img`
+const ImgWrap = styled.div`
 width: ${columnWidth + 'px'};
 height:${itemHeight + 'px'};
 `;
-
 
 
 const HoverOverlay = styled.div`
@@ -55,20 +55,19 @@ padding: 10px;
 
 
 const PublishedIssues = ({ data }) => {
-  const edges = data.allMarkdownRemark.edges;
+  const edges = data.allContentfulPublishedIssue.edges;
   const listItems = edges.map((edge) => {
-    const imageURL = __PATH_PREFIX__ + edge.node.frontmatter.imageURL;
     return (
       <div key={edge.node.id}>
         <Link to={edge.node.fields.slug}>
-            <div>
-              <Image src={imageURL} />
-            </div>
-            <HoverOverlay>
-              <HoverLink>
-                {edge.node.frontmatter.title}
-              </HoverLink>
-            </HoverOverlay>
+          <ImgWrap>
+            <Image resolutions={edge.node.image.resolutions}/>
+          </ImgWrap>
+          <HoverOverlay>
+            <HoverLink>
+              {edge.node.title}
+            </HoverLink>
+          </HoverOverlay>
         </ Link>
       </div>
     )
@@ -94,26 +93,30 @@ const PublishedIssues = ({ data }) => {
 
 export const publishedPosts = graphql`
     query allPublishedPosts {
-        allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/published-issues/"}} sort: {fields: [frontmatter___issue_date], order: DESC}) {
+        allContentfulPublishedIssue(sort: {fields:[issue_date], order:DESC}) {
             edges {
                 node {
-                    id
-                    html
                     fields {
                         slug
                     }
-                    frontmatter {
-                        title
-                        embed_code
-                        issue_date
-                        pubURL
-                        imageURL
-                        _PARENT
-                        parent
+                    id
+                    title
+                    issue_date
+                    pubURL
+                    image {
+                        resolutions(width:200, height:300) {
+                            base64
+                            aspectRatio
+                            width
+                            height
+                            src
+                            srcSet
+                        }
                     }
                 }
             }
-        }}
+        }
+    }
 `
 
 export default PublishedIssues;

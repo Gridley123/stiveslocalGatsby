@@ -9,7 +9,7 @@ class Filter extends Component {
 
   render() {
 
-    const categories = this.props.data.edges[0].node.categories;
+    const categories = this.props.data.edges.map(edge => edge.node.name);
     const filters = categories.map((category) =>
       <div key={category}>
         <label>

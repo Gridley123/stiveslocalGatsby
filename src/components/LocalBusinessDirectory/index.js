@@ -11,7 +11,8 @@ import values from 'lodash/values';
 class LocalBusinessDirectory extends Component {
   constructor(props, context) {
     super(props, context);
-    this.categories = this.props.data.categories.edges[0].node.categories;
+    console.log(this.props);
+    this.categories = this.props.data.categories.edges.map(edge => edge.node.name);
     this.initialFilterState = {};
     this.categories.forEach((category) => {
       this.initialFilterState[category] = true;
@@ -30,7 +31,11 @@ class LocalBusinessDirectory extends Component {
     const visibility_filter = this.state.visibility_filter;
     const allBusinesses = this.props.data.allBusiness.edges;
     return allBusinesses.filter((edge) => {
-      return edge.node.categories.some((category) => {
+      console.log(edge);
+      const catArray = edge.node.categories.map(catObj => catObj.name);
+      console.log(catArray);
+      return catArray.some((category) => {
+        const cat = category.name;
         return visibility_filter[category] === true;
       });
     });

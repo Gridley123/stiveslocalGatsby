@@ -2,6 +2,7 @@ import React from 'react'
 import HomePage from '../components/HomePage/'
 
 export default ({data}) => {
+  console.log(data);
   return(
   <div>
     <HomePage data={data}/>
@@ -21,22 +22,26 @@ export const publishedPosts = graphql`
                 }
             }
         }
-        limitedIssues: allMarkdownRemark(limit:3, filter: {fileAbsolutePath: {regex: "/published-issues/"}} sort: {fields: [frontmatter___issue_date], order: DESC}) {
+        limitedIssues: allContentfulPublishedIssue(limit:3, sort: {fields: [issue_date], order: DESC}) {
             edges {
                 node {
                     id
-                    html
                     fields {
                         slug
                     }
-                    frontmatter {
-                        title
-                        embed_code
-                        issue_date
-                        pubURL
-                        imageURL
-                        _PARENT
-                        parent
+                    title
+                    pubURL
+                    issue_date
+                    pubURL
+                    image {
+                        resolutions(width: 300) {
+                            base64
+                            aspectRatio
+                            width
+                            height
+                            src
+                            srcSet
+                        }
                     }
                 }
             }

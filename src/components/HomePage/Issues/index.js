@@ -7,6 +7,7 @@ import CentredDiv from '../../CenteredDiv';
 import {GLink} from '../../Link';
 import SubHeading from '../../SubHeading';
 import Link from 'gatsby-link';
+import Image from 'gatsby-image';
 
 
 const Wrapper = styled.div`
@@ -15,9 +16,6 @@ text-align:center;
 padding: 20px;
 `;
 
-const Image = styled.img`
-
-`;
 
 const H1 = styled.h1`
     font-family: 'dearJoe5', 'Times New Roman', Serif;
@@ -58,18 +56,17 @@ export default class Issues extends React.Component {
   render() {
     const edges = this.props.limitedIssues.edges;
     const listItems = edges.map((edge) => {
-      const imageURL = __PATH_PREFIX__ + edge.node.frontmatter.imageURL;
       return (
         <Col key={edge.node.id} md={4} xs={12}>
           <CentredDiv>
             <div>
               <Link to={edge.node.fields.slug}>
                 <div>
-                  <Image src={imageURL} />
+                  <Image resolutions={edge.node.image.resolutions} />
                 </div>
                 <HoverOverlay>
                   <HoverLink>
-                    {edge.node.frontmatter.title}
+                    {edge.node.title}
                   </HoverLink>
                 </HoverOverlay>
               </ Link>
