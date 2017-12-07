@@ -15,8 +15,7 @@ export default ({ advertiserData, formattedAddress }) => {
   return (
     <Grid fluid style={{ padding: '0' }}>
       <Name advertiserData={advertiserData} />
-      <Address style={{ marginBottom: '15px' }} advertiserData={advertiserData}
-               formattedAddress={formattedAddress}/>
+      <Address style={{ marginBottom: '15px' }} advertiserData={advertiserData}/>
       <Telephone advertiserData={advertiserData} />
       <Email advertiserData={advertiserData} />
       <Website advertiserData={advertiserData} />

@@ -30,7 +30,8 @@ class Address extends React.Component {
 
   render() {
     const advertiserData = this.props.advertiserData;
-    const formattedAddress = this.props.formattedAddress;
+    const formattedAddress = advertiserData.location || null;
+    console.log(formattedAddress);
 
     const homeAddress1 =
       advertiserData.home_address_line_1 || null;

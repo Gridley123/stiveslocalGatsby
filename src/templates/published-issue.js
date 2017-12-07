@@ -56,14 +56,6 @@ class Embed extends React.Component {
     getOEmbed().then(html => this.setState({html}));
   }
 
-  componentWillUpdate() {
-    this.loadIframe()
-  }
-
-  componentWillReceiveProps() {
-    this.loadIframe()
-  }
-
   componentDidMount() {
     this.loadIframe()
   }
@@ -77,8 +69,12 @@ class Embed extends React.Component {
   }
 }
 
-
 export default ({ data }) => {
+  console.log(data);
+  let detailHTML = null;
+  if(data.markdownData.detail){
+    detailHTML = data.markdownData.detail.childMarkdownRemark.html;
+  }
   return (
     <PageWrapper>
       <EmbedWrapper>
@@ -90,7 +86,7 @@ export default ({ data }) => {
       <IssueHeader>
         {data.markdownData.title}
       </IssueHeader>
-      <IssueBody dangerouslySetInnerHTML={{ __html: data.detail.childMarkdownRemark.html }}>
+      <IssueBody dangerouslySetInnerHTML={{__html: detailHTML}}>
       </IssueBody>
     </PageWrapper>
   )

@@ -24,6 +24,7 @@ justify-content: center;
 const ImgWrap = styled.div`
 width: ${columnWidth + 'px'};
 height:${itemHeight + 'px'};
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 
@@ -51,7 +52,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 10px;
-`
+`;
 
 
 const PublishedIssues = ({ data }) => {
@@ -104,7 +105,7 @@ export const publishedPosts = graphql`
                     issue_date
                     pubURL
                     image {
-                        resolutions(width:200, height:300) {
+                        resolutions(width:300) {
                             base64
                             aspectRatio
                             width

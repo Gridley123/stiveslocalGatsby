@@ -99,6 +99,7 @@ export const query = graphql`
             home_address_line_2
             contact_first_name
             contact_last_name
+            location
         }
     }
 `;
