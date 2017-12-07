@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9329239-ea5c-42f6-b2ad-df8bf890b7bb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gatsby-node.js" afterPath="$PROJECT_DIR$/gatsby-node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/map-address-creator.js" afterPath="$PROJECT_DIR$/map-address-creator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/published-issues.js" afterPath="$PROJECT_DIR$/src/pages/published-issues.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/advertiser/Address.js" afterPath="$PROJECT_DIR$/src/templates/advertiser/Address.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/advertiser/AdvertiserDetails.js" afterPath="$PROJECT_DIR$/src/templates/advertiser/AdvertiserDetails.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/advertiser/index.js" afterPath="$PROJECT_DIR$/src/templates/advertiser/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/published-issue.js" afterPath="$PROJECT_DIR$/src/templates/published-issue.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -115,24 +108,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Detail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/advertiser/Detail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="17" column="77" lean-forward="true" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <marker date="1512424692000" expanded="true" signature="190:209" ph="{...}" />
-                <marker date="1512424692000" expanded="true" signature="246:264" ph="{...}" />
-                <marker date="1512424692000" expanded="true" signature="546:799" ph="&lt;Row/&gt;" />
-                <marker date="1512424692000" expanded="true" signature="560:653" ph="&lt;Col/&gt;" />
-                <marker date="1512424692000" expanded="true" signature="662:786" ph="&lt;Col/&gt;" />
-                <marker date="1512424692000" expanded="true" signature="685:771" ph="&lt;div/&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="published-issues.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/published-issues.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -207,7 +182,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Address.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Address.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/advertiser/Address.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25">
@@ -305,11 +280,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gatsby-node.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gatsby-node.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gatsby-node.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".nvmrc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.nvmrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -415,12 +400,12 @@
       <find>react-fa</find>
       <find>react-facebook</find>
       <find>issuu.com/embed</find>
-      <find>console.log</find>
       <find>console</find>
       <find>Star La</find>
       <find>water</find>
       <find>wills</find>
       <find>AdvertiserQuery</find>
+      <find>console.log</find>
     </findStrings>
     <replaceStrings>
       <replace>ColStyled</replace>
@@ -763,7 +748,7 @@
       <workItem from="1510680889651" duration="16670000" />
       <workItem from="1511453057188" duration="67027000" />
       <workItem from="1512423804214" duration="1822000" />
-      <workItem from="1512459105269" duration="9262000" />
+      <workItem from="1512459105269" duration="9563000" />
     </task>
     <task id="LOCAL-00001" summary="Working">
       <created>1510306512981</created>
@@ -856,7 +841,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512558762014</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Working with maps and contentful">
+      <created>1512685881220</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1512685881221</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -883,7 +875,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368693000" />
+    <option name="totallyTimeSpent" value="368994000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -957,7 +949,8 @@
     <MESSAGE value="Last Working" />
     <MESSAGE value="Last Working gatsby node" />
     <MESSAGE value="Fully working with contentful" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fully working with contentful" />
+    <MESSAGE value="Working with maps and contentful" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working with maps and contentful" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1036,13 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-65">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.nvmrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1561,14 +1547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/advertiser/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
@@ -1661,6 +1639,22 @@
             <marker date="1512682044000" expanded="true" signature="238:256" ph="{...}" />
             <marker date="1512682044000" expanded="true" signature="282:301" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.nvmrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
