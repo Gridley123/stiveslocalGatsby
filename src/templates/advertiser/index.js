@@ -22,6 +22,7 @@ const JustifyDiv = styled.div`
 export default ({ data }) => {
   const fm = data.jsonData;
   const formattedAddress = null;
+  const resolutions = fm.image ? fm.image.resolutions : null;
   console.log(fm);
   return (
     <Wrapper>
@@ -49,7 +50,7 @@ export default ({ data }) => {
           </Col>
           <Col md={6} xs={12}>
             <JustifyDiv>
-              <Image resolutions={fm.image.resolutions} />
+              <Image resolutions={resolutions} />
             </JustifyDiv>
 
           </Col>

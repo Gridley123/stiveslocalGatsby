@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9329239-ea5c-42f6-b2ad-df8bf890b7bb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/advertiser/index.js" afterPath="$PROJECT_DIR$/src/templates/advertiser/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,94 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="local-business-directory.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/local-business-directory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="53" column="65" lean-forward="false" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-                <marker date="1512424304000" expanded="true" signature="263:1684" ph="query...{&#10;        allAllDataJson(sort: {fields: [businesses], order: ASC}) {&#10;            edges {&#10;                node {&#10;                    id&#10;                    businesses {&#10;                        categories&#10;                        company_name&#10;                        home_phone&#10;                        email&#10;                        facebook_url&#10;                        instagram_url&#10;                        website_url&#10;                        detail&#10;                        image&#10;                        home_address_line_1&#10;                        town&#10;                        postcode&#10;                        twitter_url&#10;                        mobile_phone&#10;                        home_address_line_2&#10;                        contact_first_name&#10;                        contact_last_name&#10;                    }&#10;                }&#10;            }&#10;        }&#10;        categories: allCategoriesJson {&#10;            edges {&#10;                node {&#10;                    id&#10;                    categories&#10;                }&#10;            }&#10;        }&#10;    }" />
-                <marker date="1512424304000" expanded="true" signature="269:289" ph="allBusinessDirectory...allBusinessDirectory" />
-                <marker date="1512424304000" expanded="true" signature="290:1684" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="313:334" ph="allContentfulBusiness...allContentfulBusiness" />
-                <marker date="1512424304000" expanded="true" signature="313:1498" ph="allContentfulBusiness...{&#10;            edges {&#10;                node {&#10;                    id&#10;                    fields {&#10;                        slug&#10;                    }&#10;                    categories {&#10;                        name&#10;                    }&#10;                    company_name&#10;                    home_phone&#10;                    email&#10;                    facebook_url&#10;                    instagram_url&#10;                    website_url&#10;                    detail {&#10;                        detail&#10;                    }&#10;                    image {&#10;                        id&#10;                        sizes {&#10;                            base64&#10;                            aspectRatio&#10;                            src&#10;                            srcSet&#10;                            sizes&#10;                        }&#10;                    }&#10;                    home_address_line_1&#10;                    town&#10;                    postcode&#10;                    twitter_url&#10;                    mobile_phone&#10;                    home_address_line_2&#10;                    contact_first_name&#10;                    contact_last_name&#10;                }&#10;            }&#10;        }" />
-                <marker date="1512424304000" expanded="true" signature="334:366" ph="(...)" />
-                <marker date="1512424304000" expanded="true" signature="335:339" ph="sort...sort" />
-                <marker date="1512424304000" expanded="true" signature="335:365" ph="sort...{fields: [company_name]}" />
-                <marker date="1512424304000" expanded="true" signature="341:365" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="342:348" ph="fields...fields" />
-                <marker date="1512424304000" expanded="true" signature="342:364" ph="fields...[company_name]" />
-                <marker date="1512424304000" expanded="true" signature="350:364" ph="[...]" />
-                <marker date="1512424304000" expanded="true" signature="367:1498" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="381:386" ph="edges...edges" />
-                <marker date="1512424304000" expanded="true" signature="381:1488" ph="edges...{&#10;                node {&#10;                    id&#10;                    fields {&#10;                        slug&#10;                    }&#10;                    categories {&#10;                        name&#10;                    }&#10;                    company_name&#10;                    home_phone&#10;                    email&#10;                    facebook_url&#10;                    instagram_url&#10;                    website_url&#10;                    detail {&#10;                        detail&#10;                    }&#10;                    image {&#10;                        id&#10;                        sizes {&#10;                            base64&#10;                            aspectRatio&#10;                            src&#10;                            srcSet&#10;                            sizes&#10;                        }&#10;                    }&#10;                    home_address_line_1&#10;                    town&#10;                    postcode&#10;                    twitter_url&#10;                    mobile_phone&#10;                    home_address_line_2&#10;                    contact_first_name&#10;                    contact_last_name&#10;                }&#10;            }" />
-                <marker date="1512424304000" expanded="true" signature="387:1488" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="405:409" ph="node...node" />
-                <marker date="1512424304000" expanded="true" signature="405:1474" ph="node...{&#10;                    id&#10;                    fields {&#10;                        slug&#10;                    }&#10;                    categories {&#10;                        name&#10;                    }&#10;                    company_name&#10;                    home_phone&#10;                    email&#10;                    facebook_url&#10;                    instagram_url&#10;                    website_url&#10;                    detail {&#10;                        detail&#10;                    }&#10;                    image {&#10;                        id&#10;                        sizes {&#10;                            base64&#10;                            aspectRatio&#10;                            src&#10;                            srcSet&#10;                            sizes&#10;                        }&#10;                    }&#10;                    home_address_line_1&#10;                    town&#10;                    postcode&#10;                    twitter_url&#10;                    mobile_phone&#10;                    home_address_line_2&#10;                    contact_first_name&#10;                    contact_last_name&#10;                }" />
-                <marker date="1512424304000" expanded="true" signature="410:1474" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="432:434" ph="id...id" />
-                <marker date="1512424304000" expanded="true" signature="455:461" ph="fields...fields" />
-                <marker date="1512424304000" expanded="true" signature="455:514" ph="fields...{&#10;                        slug&#10;                    }" />
-                <marker date="1512424304000" expanded="true" signature="462:514" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="488:492" ph="slug...slug" />
-                <marker date="1512424304000" expanded="true" signature="535:545" ph="categories...categories" />
-                <marker date="1512424304000" expanded="true" signature="535:598" ph="categories...{&#10;                        name&#10;                    }" />
-                <marker date="1512424304000" expanded="true" signature="546:598" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="572:576" ph="name...name" />
-                <marker date="1512424304000" expanded="true" signature="619:631" ph="company_name...company_name" />
-                <marker date="1512424304000" expanded="true" signature="652:662" ph="home_phone...home_phone" />
-                <marker date="1512424304000" expanded="true" signature="683:688" ph="email...email" />
-                <marker date="1512424304000" expanded="true" signature="709:721" ph="facebook_url...facebook_url" />
-                <marker date="1512424304000" expanded="true" signature="742:755" ph="instagram_url...instagram_url" />
-                <marker date="1512424304000" expanded="true" signature="776:787" ph="website_url...website_url" />
-                <marker date="1512424304000" expanded="true" signature="808:814" ph="detail...detail" />
-                <marker date="1512424304000" expanded="true" signature="808:869" ph="detail...{&#10;                        detail&#10;                    }" />
-                <marker date="1512424304000" expanded="true" signature="815:869" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="841:847" ph="detail...detail" />
-                <marker date="1512424304000" expanded="true" signature="890:895" ph="image...image" />
-                <marker date="1512424304000" expanded="true" signature="890:1180" ph="image...{&#10;                        id&#10;                        sizes {&#10;                            base64&#10;                            aspectRatio&#10;                            src&#10;                            srcSet&#10;                            sizes&#10;                        }&#10;                    }" />
-                <marker date="1512424304000" expanded="true" signature="896:1180" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="922:924" ph="id...id" />
-                <marker date="1512424304000" expanded="true" signature="949:954" ph="sizes...sizes" />
-                <marker date="1512424304000" expanded="true" signature="949:1158" ph="sizes...{&#10;                            base64&#10;                            aspectRatio&#10;                            src&#10;                            srcSet&#10;                            sizes&#10;                        }" />
-                <marker date="1512424304000" expanded="true" signature="955:1158" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="985:991" ph="base64...base64" />
-                <marker date="1512424304000" expanded="true" signature="1020:1031" ph="aspectRatio...aspectRatio" />
-                <marker date="1512424304000" expanded="true" signature="1060:1063" ph="src...src" />
-                <marker date="1512424304000" expanded="true" signature="1092:1098" ph="srcSet...srcSet" />
-                <marker date="1512424304000" expanded="true" signature="1127:1132" ph="sizes...sizes" />
-                <marker date="1512424304000" expanded="true" signature="1201:1220" ph="home_address_line_1...home_address_line_1" />
-                <marker date="1512424304000" expanded="true" signature="1241:1245" ph="town...town" />
-                <marker date="1512424304000" expanded="true" signature="1266:1274" ph="postcode...postcode" />
-                <marker date="1512424304000" expanded="true" signature="1295:1306" ph="twitter_url...twitter_url" />
-                <marker date="1512424304000" expanded="true" signature="1327:1339" ph="mobile_phone...mobile_phone" />
-                <marker date="1512424304000" expanded="true" signature="1360:1379" ph="home_address_line_2...home_address_line_2" />
-                <marker date="1512424304000" expanded="true" signature="1400:1418" ph="contact_first_name...contact_first_name" />
-                <marker date="1512424304000" expanded="true" signature="1439:1456" ph="contact_last_name...contact_last_name" />
-                <marker date="1512424304000" expanded="true" signature="1497:1498" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="1519:1542" ph="allContentfulCategories...allContentfulCategories" />
-                <marker date="1512424304000" expanded="true" signature="1519:1678" ph="allContentfulCategories...{&#10;            edges {&#10;                node {&#10;                    name&#10;                }&#10;            }&#10;        }" />
-                <marker date="1512424304000" expanded="true" signature="1542:1566" ph="(...)" />
-                <marker date="1512424304000" expanded="true" signature="1543:1547" ph="sort...sort" />
-                <marker date="1512424304000" expanded="true" signature="1543:1565" ph="sort...{fields: [name]}" />
-                <marker date="1512424304000" expanded="true" signature="1549:1565" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="1550:1556" ph="fields...fields" />
-                <marker date="1512424304000" expanded="true" signature="1550:1564" ph="fields...[name]" />
-                <marker date="1512424304000" expanded="true" signature="1558:1564" ph="[...]" />
-                <marker date="1512424304000" expanded="true" signature="1567:1678" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="1581:1586" ph="edges...edges" />
-                <marker date="1512424304000" expanded="true" signature="1581:1668" ph="edges...{&#10;                node {&#10;                    name&#10;                }&#10;            }" />
-                <marker date="1512424304000" expanded="true" signature="1587:1668" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="1605:1609" ph="node...node" />
-                <marker date="1512424304000" expanded="true" signature="1605:1654" ph="node...{&#10;                    name&#10;                }" />
-                <marker date="1512424304000" expanded="true" signature="1610:1654" ph="{...}" />
-                <marker date="1512424304000" expanded="true" signature="1632:1636" ph="name...name" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="published-issues.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/published-issues.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -280,11 +193,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gatsby-node.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gatsby-node.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gatsby-node.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -300,76 +223,76 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/templates/advertiser/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="70" />
+            <state relative-caret-position="362">
+              <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1512681815000" expanded="true" signature="333:354" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="389:409" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="443:445" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="1472:2434" ph="query...{&#10;&#10;        jsonData: contentfulBusiness(fields: {slug: {eq: $slug}}) {&#10;            id&#10;            fields {&#10;                slug&#10;            }&#10;            categories {&#10;                name&#10;            }&#10;            company_name&#10;            home_phone&#10;            email&#10;            facebook_url&#10;            instagram_url&#10;            website_url&#10;            detail {&#10;                detail&#10;            }&#10;            image {&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }&#10;            home_address_line_1&#10;            town&#10;            postcode&#10;            twitter_url&#10;            mobile_phone&#10;            home_address_line_2&#10;            contact_first_name&#10;            contact_last_name&#10;        }&#10;        imageURL: imageSharp(id: {regex: $imageURLRegex}) {&#10;            resolutions(&#10;                width: 400&#10;            ) {&#10;                ...GatsbyImageSharpResolutions&#10;            }&#10;        }&#10;    }" />
-                <marker date="1512681815000" expanded="true" signature="1478:1493" ph="AdvertiserQuery...AdvertiserQuery" />
-                <marker date="1512681815000" expanded="true" signature="1493:1509" ph="(...)" />
-                <marker date="1512681815000" expanded="true" signature="1501:1507" ph="String...String" />
-                <marker date="1512681815000" expanded="true" signature="1510:2434" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="1531:1549" ph="contentfulBusiness...contentfulBusiness" />
-                <marker date="1512681815000" expanded="true" signature="1531:2428" ph="contentfulBusiness...{&#10;            id&#10;            fields {&#10;                slug&#10;            }&#10;            categories {&#10;                name&#10;            }&#10;            company_name&#10;            home_phone&#10;            email&#10;            facebook_url&#10;            instagram_url&#10;            website_url&#10;            detail {&#10;                detail&#10;            }&#10;            image {&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }&#10;            home_address_line_1&#10;            town&#10;            postcode&#10;            twitter_url&#10;            mobile_phone&#10;            home_address_line_2&#10;            contact_first_name&#10;            contact_last_name&#10;        }" />
-                <marker date="1512681815000" expanded="true" signature="1549:1578" ph="(...)" />
-                <marker date="1512681815000" expanded="true" signature="1550:1556" ph="fields...fields" />
-                <marker date="1512681815000" expanded="true" signature="1550:1577" ph="fields...{slug: {eq: $slug}}" />
-                <marker date="1512681815000" expanded="true" signature="1558:1577" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="1559:1563" ph="slug...slug" />
-                <marker date="1512681815000" expanded="true" signature="1559:1576" ph="slug...{eq: $slug}" />
-                <marker date="1512681815000" expanded="true" signature="1565:1576" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="1566:1568" ph="eq...eq" />
-                <marker date="1512681815000" expanded="true" signature="1579:2428" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="1593:1595" ph="id...id" />
-                <marker date="1512681815000" expanded="true" signature="1608:1614" ph="fields...fields" />
-                <marker date="1512681815000" expanded="true" signature="1608:1651" ph="fields...{&#10;                slug&#10;            }" />
-                <marker date="1512681815000" expanded="true" signature="1615:1651" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="1633:1637" ph="slug...slug" />
-                <marker date="1512681815000" expanded="true" signature="1664:1674" ph="categories...categories" />
-                <marker date="1512681815000" expanded="true" signature="1664:1711" ph="categories...{&#10;                name&#10;            }" />
-                <marker date="1512681815000" expanded="true" signature="1675:1711" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="1693:1697" ph="name...name" />
-                <marker date="1512681815000" expanded="true" signature="1724:1736" ph="company_name...company_name" />
-                <marker date="1512681815000" expanded="true" signature="1749:1759" ph="home_phone...home_phone" />
-                <marker date="1512681815000" expanded="true" signature="1772:1777" ph="email...email" />
-                <marker date="1512681815000" expanded="true" signature="1790:1802" ph="facebook_url...facebook_url" />
-                <marker date="1512681815000" expanded="true" signature="1815:1828" ph="instagram_url...instagram_url" />
-                <marker date="1512681815000" expanded="true" signature="1841:1852" ph="website_url...website_url" />
-                <marker date="1512681815000" expanded="true" signature="1865:1871" ph="detail...detail" />
-                <marker date="1512681815000" expanded="true" signature="1865:1910" ph="detail...{&#10;                detail&#10;            }" />
-                <marker date="1512681815000" expanded="true" signature="1872:1910" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="1890:1896" ph="detail...detail" />
-                <marker date="1512681815000" expanded="true" signature="1897:1910" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="1923:1928" ph="image...image" />
-                <marker date="1512681815000" expanded="true" signature="1923:2185" ph="image...{&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }" />
-                <marker date="1512681815000" expanded="true" signature="1929:2185" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="1947:1949" ph="id...id" />
-                <marker date="1512681815000" expanded="true" signature="1966:1977" ph="resolutions...resolutions" />
-                <marker date="1512681815000" expanded="true" signature="1966:2171" ph="resolutions...{&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }" />
-                <marker date="1512681815000" expanded="true" signature="1977:1988" ph="(...)" />
-                <marker date="1512681815000" expanded="true" signature="1978:1983" ph="width...width" />
-                <marker date="1512681815000" expanded="true" signature="1989:2171" ph="{...}" />
-                <marker date="1512681815000" expanded="true" signature="2011:2017" ph="base64...base64" />
-                <marker date="1512681815000" expanded="true" signature="2038:2049" ph="aspectRatio...aspectRatio" />
-                <marker date="1512681815000" expanded="true" signature="2070:2075" ph="width...width" />
-                <marker date="1512681815000" expanded="true" signature="2096:2102" ph="height...height" />
-                <marker date="1512681815000" expanded="true" signature="2123:2126" ph="src...src" />
-                <marker date="1512681815000" expanded="true" signature="2147:2153" ph="srcSet...srcSet" />
-                <marker date="1512681815000" expanded="true" signature="2198:2217" ph="home_address_line_1...home_address_line_1" />
-                <marker date="1512681815000" expanded="true" signature="2230:2234" ph="town...town" />
-                <marker date="1512681815000" expanded="true" signature="2247:2255" ph="postcode...postcode" />
-                <marker date="1512681815000" expanded="true" signature="2268:2279" ph="twitter_url...twitter_url" />
-                <marker date="1512681815000" expanded="true" signature="2292:2304" ph="mobile_phone...mobile_phone" />
-                <marker date="1512681815000" expanded="true" signature="2317:2336" ph="home_address_line_2...home_address_line_2" />
-                <marker date="1512681815000" expanded="true" signature="2349:2367" ph="contact_first_name...contact_first_name" />
-                <marker date="1512681815000" expanded="true" signature="2380:2397" ph="contact_last_name...contact_last_name" />
-                <marker date="1512681815000" expanded="true" signature="2410:2418" ph="location...location" />
+                <marker date="1512748799000" expanded="true" signature="333:354" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="389:409" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="443:445" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="1525:2487" ph="query...{&#10;&#10;        jsonData: contentfulBusiness(fields: {slug: {eq: $slug}}) {&#10;            id&#10;            fields {&#10;                slug&#10;            }&#10;            categories {&#10;                name&#10;            }&#10;            company_name&#10;            home_phone&#10;            email&#10;            facebook_url&#10;            instagram_url&#10;            website_url&#10;            detail {&#10;                detail&#10;            }&#10;            image {&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }&#10;            home_address_line_1&#10;            town&#10;            postcode&#10;            twitter_url&#10;            mobile_phone&#10;            home_address_line_2&#10;            contact_first_name&#10;            contact_last_name&#10;        }&#10;        imageURL: imageSharp(id: {regex: $imageURLRegex}) {&#10;            resolutions(&#10;                width: 400&#10;            ) {&#10;                ...GatsbyImageSharpResolutions&#10;            }&#10;        }&#10;    }" />
+                <marker date="1512748799000" expanded="true" signature="1531:1546" ph="AdvertiserQuery...AdvertiserQuery" />
+                <marker date="1512748799000" expanded="true" signature="1546:1562" ph="(...)" />
+                <marker date="1512748799000" expanded="true" signature="1554:1560" ph="String...String" />
+                <marker date="1512748799000" expanded="true" signature="1563:2487" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="1584:1602" ph="contentfulBusiness...contentfulBusiness" />
+                <marker date="1512748799000" expanded="true" signature="1584:2481" ph="contentfulBusiness...{&#10;            id&#10;            fields {&#10;                slug&#10;            }&#10;            categories {&#10;                name&#10;            }&#10;            company_name&#10;            home_phone&#10;            email&#10;            facebook_url&#10;            instagram_url&#10;            website_url&#10;            detail {&#10;                detail&#10;            }&#10;            image {&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }&#10;            home_address_line_1&#10;            town&#10;            postcode&#10;            twitter_url&#10;            mobile_phone&#10;            home_address_line_2&#10;            contact_first_name&#10;            contact_last_name&#10;        }" />
+                <marker date="1512748799000" expanded="true" signature="1602:1631" ph="(...)" />
+                <marker date="1512748799000" expanded="true" signature="1603:1609" ph="fields...fields" />
+                <marker date="1512748799000" expanded="true" signature="1603:1630" ph="fields...{slug: {eq: $slug}}" />
+                <marker date="1512748799000" expanded="true" signature="1611:1630" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="1612:1616" ph="slug...slug" />
+                <marker date="1512748799000" expanded="true" signature="1612:1629" ph="slug...{eq: $slug}" />
+                <marker date="1512748799000" expanded="true" signature="1618:1629" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="1619:1621" ph="eq...eq" />
+                <marker date="1512748799000" expanded="true" signature="1632:2481" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="1646:1648" ph="id...id" />
+                <marker date="1512748799000" expanded="true" signature="1661:1667" ph="fields...fields" />
+                <marker date="1512748799000" expanded="true" signature="1661:1704" ph="fields...{&#10;                slug&#10;            }" />
+                <marker date="1512748799000" expanded="true" signature="1668:1704" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="1686:1690" ph="slug...slug" />
+                <marker date="1512748799000" expanded="true" signature="1717:1727" ph="categories...categories" />
+                <marker date="1512748799000" expanded="true" signature="1717:1764" ph="categories...{&#10;                name&#10;            }" />
+                <marker date="1512748799000" expanded="true" signature="1728:1764" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="1746:1750" ph="name...name" />
+                <marker date="1512748799000" expanded="true" signature="1777:1789" ph="company_name...company_name" />
+                <marker date="1512748799000" expanded="true" signature="1802:1812" ph="home_phone...home_phone" />
+                <marker date="1512748799000" expanded="true" signature="1825:1830" ph="email...email" />
+                <marker date="1512748799000" expanded="true" signature="1843:1855" ph="facebook_url...facebook_url" />
+                <marker date="1512748799000" expanded="true" signature="1868:1881" ph="instagram_url...instagram_url" />
+                <marker date="1512748799000" expanded="true" signature="1894:1905" ph="website_url...website_url" />
+                <marker date="1512748799000" expanded="true" signature="1918:1924" ph="detail...detail" />
+                <marker date="1512748799000" expanded="true" signature="1918:1963" ph="detail...{&#10;                detail&#10;            }" />
+                <marker date="1512748799000" expanded="true" signature="1925:1963" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="1943:1949" ph="detail...detail" />
+                <marker date="1512748799000" expanded="true" signature="1950:1963" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="1976:1981" ph="image...image" />
+                <marker date="1512748799000" expanded="true" signature="1976:2238" ph="image...{&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }" />
+                <marker date="1512748799000" expanded="true" signature="1982:2238" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="2000:2002" ph="id...id" />
+                <marker date="1512748799000" expanded="true" signature="2019:2030" ph="resolutions...resolutions" />
+                <marker date="1512748799000" expanded="true" signature="2019:2224" ph="resolutions...{&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }" />
+                <marker date="1512748799000" expanded="true" signature="2030:2041" ph="(...)" />
+                <marker date="1512748799000" expanded="true" signature="2031:2036" ph="width...width" />
+                <marker date="1512748799000" expanded="true" signature="2042:2224" ph="{...}" />
+                <marker date="1512748799000" expanded="true" signature="2064:2070" ph="base64...base64" />
+                <marker date="1512748799000" expanded="true" signature="2091:2102" ph="aspectRatio...aspectRatio" />
+                <marker date="1512748799000" expanded="true" signature="2123:2128" ph="width...width" />
+                <marker date="1512748799000" expanded="true" signature="2149:2155" ph="height...height" />
+                <marker date="1512748799000" expanded="true" signature="2176:2179" ph="src...src" />
+                <marker date="1512748799000" expanded="true" signature="2200:2206" ph="srcSet...srcSet" />
+                <marker date="1512748799000" expanded="true" signature="2251:2270" ph="home_address_line_1...home_address_line_1" />
+                <marker date="1512748799000" expanded="true" signature="2283:2287" ph="town...town" />
+                <marker date="1512748799000" expanded="true" signature="2300:2308" ph="postcode...postcode" />
+                <marker date="1512748799000" expanded="true" signature="2321:2332" ph="twitter_url...twitter_url" />
+                <marker date="1512748799000" expanded="true" signature="2345:2357" ph="mobile_phone...mobile_phone" />
+                <marker date="1512748799000" expanded="true" signature="2370:2389" ph="home_address_line_2...home_address_line_2" />
+                <marker date="1512748799000" expanded="true" signature="2402:2420" ph="contact_first_name...contact_first_name" />
+                <marker date="1512748799000" expanded="true" signature="2433:2450" ph="contact_last_name...contact_last_name" />
+                <marker date="1512748799000" expanded="true" signature="2463:2471" ph="location...location" />
               </folding>
             </state>
           </provider>
@@ -475,9 +398,9 @@
         <option value="$PROJECT_DIR$/src/templates/published-issue.js" />
         <option value="$PROJECT_DIR$/map-address-creator.js" />
         <option value="$PROJECT_DIR$/gatsby-node.js" />
-        <option value="$PROJECT_DIR$/src/templates/advertiser/index.js" />
         <option value="$PROJECT_DIR$/src/templates/advertiser/AdvertiserDetails.js" />
         <option value="$PROJECT_DIR$/src/templates/advertiser/Address.js" />
+        <option value="$PROJECT_DIR$/src/templates/advertiser/index.js" />
       </list>
     </option>
   </component>
@@ -748,7 +671,7 @@
       <workItem from="1510680889651" duration="16670000" />
       <workItem from="1511453057188" duration="67027000" />
       <workItem from="1512423804214" duration="1822000" />
-      <workItem from="1512459105269" duration="9563000" />
+      <workItem from="1512459105269" duration="10146000" />
     </task>
     <task id="LOCAL-00001" summary="Working">
       <created>1510306512981</created>
@@ -848,7 +771,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512685881221</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Working with maps and contentful">
+      <created>1512686685059</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1512686685059</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -875,7 +805,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368994000" />
+    <option name="totallyTimeSpent" value="369577000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1022,13 +952,6 @@
         <state relative-caret-position="45">
           <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1547,79 +1470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/advertiser/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1512681815000" expanded="true" signature="333:354" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="389:409" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="443:445" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="1472:2434" ph="query...{&#10;&#10;        jsonData: contentfulBusiness(fields: {slug: {eq: $slug}}) {&#10;            id&#10;            fields {&#10;                slug&#10;            }&#10;            categories {&#10;                name&#10;            }&#10;            company_name&#10;            home_phone&#10;            email&#10;            facebook_url&#10;            instagram_url&#10;            website_url&#10;            detail {&#10;                detail&#10;            }&#10;            image {&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }&#10;            home_address_line_1&#10;            town&#10;            postcode&#10;            twitter_url&#10;            mobile_phone&#10;            home_address_line_2&#10;            contact_first_name&#10;            contact_last_name&#10;        }&#10;        imageURL: imageSharp(id: {regex: $imageURLRegex}) {&#10;            resolutions(&#10;                width: 400&#10;            ) {&#10;                ...GatsbyImageSharpResolutions&#10;            }&#10;        }&#10;    }" />
-            <marker date="1512681815000" expanded="true" signature="1478:1493" ph="AdvertiserQuery...AdvertiserQuery" />
-            <marker date="1512681815000" expanded="true" signature="1493:1509" ph="(...)" />
-            <marker date="1512681815000" expanded="true" signature="1501:1507" ph="String...String" />
-            <marker date="1512681815000" expanded="true" signature="1510:2434" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="1531:1549" ph="contentfulBusiness...contentfulBusiness" />
-            <marker date="1512681815000" expanded="true" signature="1531:2428" ph="contentfulBusiness...{&#10;            id&#10;            fields {&#10;                slug&#10;            }&#10;            categories {&#10;                name&#10;            }&#10;            company_name&#10;            home_phone&#10;            email&#10;            facebook_url&#10;            instagram_url&#10;            website_url&#10;            detail {&#10;                detail&#10;            }&#10;            image {&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }&#10;            home_address_line_1&#10;            town&#10;            postcode&#10;            twitter_url&#10;            mobile_phone&#10;            home_address_line_2&#10;            contact_first_name&#10;            contact_last_name&#10;        }" />
-            <marker date="1512681815000" expanded="true" signature="1549:1578" ph="(...)" />
-            <marker date="1512681815000" expanded="true" signature="1550:1556" ph="fields...fields" />
-            <marker date="1512681815000" expanded="true" signature="1550:1577" ph="fields...{slug: {eq: $slug}}" />
-            <marker date="1512681815000" expanded="true" signature="1558:1577" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="1559:1563" ph="slug...slug" />
-            <marker date="1512681815000" expanded="true" signature="1559:1576" ph="slug...{eq: $slug}" />
-            <marker date="1512681815000" expanded="true" signature="1565:1576" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="1566:1568" ph="eq...eq" />
-            <marker date="1512681815000" expanded="true" signature="1579:2428" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="1593:1595" ph="id...id" />
-            <marker date="1512681815000" expanded="true" signature="1608:1614" ph="fields...fields" />
-            <marker date="1512681815000" expanded="true" signature="1608:1651" ph="fields...{&#10;                slug&#10;            }" />
-            <marker date="1512681815000" expanded="true" signature="1615:1651" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="1633:1637" ph="slug...slug" />
-            <marker date="1512681815000" expanded="true" signature="1664:1674" ph="categories...categories" />
-            <marker date="1512681815000" expanded="true" signature="1664:1711" ph="categories...{&#10;                name&#10;            }" />
-            <marker date="1512681815000" expanded="true" signature="1675:1711" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="1693:1697" ph="name...name" />
-            <marker date="1512681815000" expanded="true" signature="1724:1736" ph="company_name...company_name" />
-            <marker date="1512681815000" expanded="true" signature="1749:1759" ph="home_phone...home_phone" />
-            <marker date="1512681815000" expanded="true" signature="1772:1777" ph="email...email" />
-            <marker date="1512681815000" expanded="true" signature="1790:1802" ph="facebook_url...facebook_url" />
-            <marker date="1512681815000" expanded="true" signature="1815:1828" ph="instagram_url...instagram_url" />
-            <marker date="1512681815000" expanded="true" signature="1841:1852" ph="website_url...website_url" />
-            <marker date="1512681815000" expanded="true" signature="1865:1871" ph="detail...detail" />
-            <marker date="1512681815000" expanded="true" signature="1865:1910" ph="detail...{&#10;                detail&#10;            }" />
-            <marker date="1512681815000" expanded="true" signature="1872:1910" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="1890:1896" ph="detail...detail" />
-            <marker date="1512681815000" expanded="true" signature="1897:1910" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="1923:1928" ph="image...image" />
-            <marker date="1512681815000" expanded="true" signature="1923:2185" ph="image...{&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }" />
-            <marker date="1512681815000" expanded="true" signature="1929:2185" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="1947:1949" ph="id...id" />
-            <marker date="1512681815000" expanded="true" signature="1966:1977" ph="resolutions...resolutions" />
-            <marker date="1512681815000" expanded="true" signature="1966:2171" ph="resolutions...{&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }" />
-            <marker date="1512681815000" expanded="true" signature="1977:1988" ph="(...)" />
-            <marker date="1512681815000" expanded="true" signature="1978:1983" ph="width...width" />
-            <marker date="1512681815000" expanded="true" signature="1989:2171" ph="{...}" />
-            <marker date="1512681815000" expanded="true" signature="2011:2017" ph="base64...base64" />
-            <marker date="1512681815000" expanded="true" signature="2038:2049" ph="aspectRatio...aspectRatio" />
-            <marker date="1512681815000" expanded="true" signature="2070:2075" ph="width...width" />
-            <marker date="1512681815000" expanded="true" signature="2096:2102" ph="height...height" />
-            <marker date="1512681815000" expanded="true" signature="2123:2126" ph="src...src" />
-            <marker date="1512681815000" expanded="true" signature="2147:2153" ph="srcSet...srcSet" />
-            <marker date="1512681815000" expanded="true" signature="2198:2217" ph="home_address_line_1...home_address_line_1" />
-            <marker date="1512681815000" expanded="true" signature="2230:2234" ph="town...town" />
-            <marker date="1512681815000" expanded="true" signature="2247:2255" ph="postcode...postcode" />
-            <marker date="1512681815000" expanded="true" signature="2268:2279" ph="twitter_url...twitter_url" />
-            <marker date="1512681815000" expanded="true" signature="2292:2304" ph="mobile_phone...mobile_phone" />
-            <marker date="1512681815000" expanded="true" signature="2317:2336" ph="home_address_line_2...home_address_line_2" />
-            <marker date="1512681815000" expanded="true" signature="2349:2367" ph="contact_first_name...contact_first_name" />
-            <marker date="1512681815000" expanded="true" signature="2380:2397" ph="contact_last_name...contact_last_name" />
-            <marker date="1512681815000" expanded="true" signature="2410:2418" ph="location...location" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/advertiser/AdvertiserDetails.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1655,6 +1505,87 @@
         <state relative-caret-position="330">
           <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/advertiser/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1512748799000" expanded="true" signature="333:354" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="389:409" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="443:445" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="1525:2487" ph="query...{&#10;&#10;        jsonData: contentfulBusiness(fields: {slug: {eq: $slug}}) {&#10;            id&#10;            fields {&#10;                slug&#10;            }&#10;            categories {&#10;                name&#10;            }&#10;            company_name&#10;            home_phone&#10;            email&#10;            facebook_url&#10;            instagram_url&#10;            website_url&#10;            detail {&#10;                detail&#10;            }&#10;            image {&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }&#10;            home_address_line_1&#10;            town&#10;            postcode&#10;            twitter_url&#10;            mobile_phone&#10;            home_address_line_2&#10;            contact_first_name&#10;            contact_last_name&#10;        }&#10;        imageURL: imageSharp(id: {regex: $imageURLRegex}) {&#10;            resolutions(&#10;                width: 400&#10;            ) {&#10;                ...GatsbyImageSharpResolutions&#10;            }&#10;        }&#10;    }" />
+            <marker date="1512748799000" expanded="true" signature="1531:1546" ph="AdvertiserQuery...AdvertiserQuery" />
+            <marker date="1512748799000" expanded="true" signature="1546:1562" ph="(...)" />
+            <marker date="1512748799000" expanded="true" signature="1554:1560" ph="String...String" />
+            <marker date="1512748799000" expanded="true" signature="1563:2487" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="1584:1602" ph="contentfulBusiness...contentfulBusiness" />
+            <marker date="1512748799000" expanded="true" signature="1584:2481" ph="contentfulBusiness...{&#10;            id&#10;            fields {&#10;                slug&#10;            }&#10;            categories {&#10;                name&#10;            }&#10;            company_name&#10;            home_phone&#10;            email&#10;            facebook_url&#10;            instagram_url&#10;            website_url&#10;            detail {&#10;                detail&#10;            }&#10;            image {&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }&#10;            home_address_line_1&#10;            town&#10;            postcode&#10;            twitter_url&#10;            mobile_phone&#10;            home_address_line_2&#10;            contact_first_name&#10;            contact_last_name&#10;        }" />
+            <marker date="1512748799000" expanded="true" signature="1602:1631" ph="(...)" />
+            <marker date="1512748799000" expanded="true" signature="1603:1609" ph="fields...fields" />
+            <marker date="1512748799000" expanded="true" signature="1603:1630" ph="fields...{slug: {eq: $slug}}" />
+            <marker date="1512748799000" expanded="true" signature="1611:1630" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="1612:1616" ph="slug...slug" />
+            <marker date="1512748799000" expanded="true" signature="1612:1629" ph="slug...{eq: $slug}" />
+            <marker date="1512748799000" expanded="true" signature="1618:1629" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="1619:1621" ph="eq...eq" />
+            <marker date="1512748799000" expanded="true" signature="1632:2481" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="1646:1648" ph="id...id" />
+            <marker date="1512748799000" expanded="true" signature="1661:1667" ph="fields...fields" />
+            <marker date="1512748799000" expanded="true" signature="1661:1704" ph="fields...{&#10;                slug&#10;            }" />
+            <marker date="1512748799000" expanded="true" signature="1668:1704" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="1686:1690" ph="slug...slug" />
+            <marker date="1512748799000" expanded="true" signature="1717:1727" ph="categories...categories" />
+            <marker date="1512748799000" expanded="true" signature="1717:1764" ph="categories...{&#10;                name&#10;            }" />
+            <marker date="1512748799000" expanded="true" signature="1728:1764" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="1746:1750" ph="name...name" />
+            <marker date="1512748799000" expanded="true" signature="1777:1789" ph="company_name...company_name" />
+            <marker date="1512748799000" expanded="true" signature="1802:1812" ph="home_phone...home_phone" />
+            <marker date="1512748799000" expanded="true" signature="1825:1830" ph="email...email" />
+            <marker date="1512748799000" expanded="true" signature="1843:1855" ph="facebook_url...facebook_url" />
+            <marker date="1512748799000" expanded="true" signature="1868:1881" ph="instagram_url...instagram_url" />
+            <marker date="1512748799000" expanded="true" signature="1894:1905" ph="website_url...website_url" />
+            <marker date="1512748799000" expanded="true" signature="1918:1924" ph="detail...detail" />
+            <marker date="1512748799000" expanded="true" signature="1918:1963" ph="detail...{&#10;                detail&#10;            }" />
+            <marker date="1512748799000" expanded="true" signature="1925:1963" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="1943:1949" ph="detail...detail" />
+            <marker date="1512748799000" expanded="true" signature="1950:1963" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="1976:1981" ph="image...image" />
+            <marker date="1512748799000" expanded="true" signature="1976:2238" ph="image...{&#10;                id&#10;                resolutions(width:400) {&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }&#10;            }" />
+            <marker date="1512748799000" expanded="true" signature="1982:2238" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="2000:2002" ph="id...id" />
+            <marker date="1512748799000" expanded="true" signature="2019:2030" ph="resolutions...resolutions" />
+            <marker date="1512748799000" expanded="true" signature="2019:2224" ph="resolutions...{&#10;                    base64&#10;                    aspectRatio&#10;                    width&#10;                    height&#10;                    src&#10;                    srcSet&#10;                }" />
+            <marker date="1512748799000" expanded="true" signature="2030:2041" ph="(...)" />
+            <marker date="1512748799000" expanded="true" signature="2031:2036" ph="width...width" />
+            <marker date="1512748799000" expanded="true" signature="2042:2224" ph="{...}" />
+            <marker date="1512748799000" expanded="true" signature="2064:2070" ph="base64...base64" />
+            <marker date="1512748799000" expanded="true" signature="2091:2102" ph="aspectRatio...aspectRatio" />
+            <marker date="1512748799000" expanded="true" signature="2123:2128" ph="width...width" />
+            <marker date="1512748799000" expanded="true" signature="2149:2155" ph="height...height" />
+            <marker date="1512748799000" expanded="true" signature="2176:2179" ph="src...src" />
+            <marker date="1512748799000" expanded="true" signature="2200:2206" ph="srcSet...srcSet" />
+            <marker date="1512748799000" expanded="true" signature="2251:2270" ph="home_address_line_1...home_address_line_1" />
+            <marker date="1512748799000" expanded="true" signature="2283:2287" ph="town...town" />
+            <marker date="1512748799000" expanded="true" signature="2300:2308" ph="postcode...postcode" />
+            <marker date="1512748799000" expanded="true" signature="2321:2332" ph="twitter_url...twitter_url" />
+            <marker date="1512748799000" expanded="true" signature="2345:2357" ph="mobile_phone...mobile_phone" />
+            <marker date="1512748799000" expanded="true" signature="2370:2389" ph="home_address_line_2...home_address_line_2" />
+            <marker date="1512748799000" expanded="true" signature="2402:2420" ph="contact_first_name...contact_first_name" />
+            <marker date="1512748799000" expanded="true" signature="2433:2450" ph="contact_last_name...contact_last_name" />
+            <marker date="1512748799000" expanded="true" signature="2463:2471" ph="location...location" />
+          </folding>
         </state>
       </provider>
     </entry>
