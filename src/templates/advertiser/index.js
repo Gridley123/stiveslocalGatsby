@@ -18,12 +18,19 @@ const JustifyDiv = styled.div`
 
 `
 
+const AdvertImage = ({fm}) => {
+  if(fm.image){
+    return <Image resolutions = {fm.image.resolutions} />;
+  } else {
+    return null;
+  }
+}
 
 export default ({ data }) => {
   const fm = data.jsonData;
   const formattedAddress = null;
   const resolutions = fm.image ? fm.image.resolutions : null;
-  console.log(fm);
+  console.log(resolutions);
   return (
     <Wrapper>
       <BackLink to={'/local-business-directory'}>
@@ -50,7 +57,7 @@ export default ({ data }) => {
           </Col>
           <Col md={6} xs={12}>
             <JustifyDiv>
-              {/*<Image resolutions={resolutions} />*/}
+              <AdvertImage fm = {fm} />
             </JustifyDiv>
 
           </Col>
