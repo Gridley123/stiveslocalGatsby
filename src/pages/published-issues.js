@@ -54,6 +54,12 @@ align-items: center;
 padding: 10px;
 `;
 
+const IssueImage = ({edge}) => {
+  if (edge.node.image)
+    return <Image resolutions={edge.node.image.resolutions}/>;
+  else
+    return null
+};
 
 const PublishedIssues = ({ data }) => {
   const edges = data.allContentfulPublishedIssue.edges;
@@ -62,7 +68,7 @@ const PublishedIssues = ({ data }) => {
       <div key={edge.node.id}>
         <Link to={edge.node.fields.slug}>
           <ImgWrap>
-            <Image resolutions={edge.node.image.resolutions}/>
+            <IssueImage edge = {edge}/>
           </ImgWrap>
           <HoverOverlay>
             <HoverLink>

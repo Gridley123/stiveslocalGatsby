@@ -50,7 +50,7 @@ export default ({ data }) => {
           </Col>
           <Col md={6} xs={12}>
             <JustifyDiv>
-              <Image resolutions={resolutions} />
+              {/*<Image resolutions={resolutions} />*/}
             </JustifyDiv>
 
           </Col>

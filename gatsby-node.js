@@ -4,7 +4,7 @@ const slugCreator = require('slug');
 const rp = require('request-promise');
 const jsonWriter = require('./gatsby-node-json-writer');
 const dropRight = require('lodash/dropRight');
-const mapAddressCreator = require('./map-address-creator');
+
 
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {

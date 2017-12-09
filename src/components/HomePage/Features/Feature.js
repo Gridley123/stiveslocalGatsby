@@ -29,7 +29,7 @@ width: ${props => props.widthInPC || '30%'};
 export default (props) =>
   <CentredDiv>
     <FeatureContainer>
-      <Img src={props.img} widthInPC = {props.widthInPC}/>
+      {/*<Img src={props.img} widthInPC = {props.widthInPC}/>*/}
     <H1>{props.header}</H1>
       {props.link ? <GLink to={props.linkURL}>{props.linkTitle}</GLink> : <SubHeading>{props.linkTitle}</SubHeading>}
     </FeatureContainer>
