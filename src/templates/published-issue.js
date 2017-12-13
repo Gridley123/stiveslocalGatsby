@@ -5,7 +5,7 @@ import 'whatwg-fetch';
 const PageWrapper = styled.div`
 padding: 20px;
 font-weight: 300!important;
-margin: 150px 20px 20px;
+margin: 150px auto 20px;
 `;
 
 const ImageWrapper = styled.div`
@@ -32,15 +32,34 @@ class Embed extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      html: null
+      html: null,
     }
     this.loadIframe = this.loadIframe.bind(this);
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
-  loadIframe() {
+
+  componentDidMount() {
+    console.log('Mounted');
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    console.log(`Inner Width ${window.innerWidth}`);
+    this.loadIframe(window.innerWidth);
+  }
+
+  loadIframe(windowWidth) {
+    console.log(`loadIframe with width of ${windowWidth}`);
     const pubURL = this.props.data.markdownData.pubURL;
+
     async function getOEmbed() {
-      const url = `https://issuu.com/oembed?url=${pubURL}&format=json&iframe=true`;
+      const url = `https://issuu.com/oembed?url=${pubURL}&format=json&iframe=true&maxwidth=${windowWidth}`;
       let res, json, html;
       try {
         res = await fetch(url);
@@ -53,17 +72,14 @@ class Embed extends React.Component {
       }
     }
 
-    getOEmbed().then(html => this.setState({html}));
+    getOEmbed().then(html => this.setState({ html }));
   }
 
-  componentDidMount() {
-    this.loadIframe()
-  }
 
   render() {
     return (
       <div>
-        <div dangerouslySetInnerHTML={{__html: this.state.html}} />
+        <div dangerouslySetInnerHTML={{ __html: this.state.html }}/>
       </div>
     )
   }
@@ -72,7 +88,7 @@ class Embed extends React.Component {
 export default ({ data }) => {
   console.log(data);
   let detailHTML = null;
-  if(data.markdownData.detail){
+  if (data.markdownData.detail) {
     detailHTML = data.markdownData.detail.childMarkdownRemark.html;
   }
   return (
@@ -86,7 +102,7 @@ export default ({ data }) => {
       <IssueHeader>
         {data.markdownData.title}
       </IssueHeader>
-      <IssueBody dangerouslySetInnerHTML={{__html: detailHTML}}>
+      <IssueBody dangerouslySetInnerHTML={{ __html: detailHTML }}>
       </IssueBody>
     </PageWrapper>
   )
