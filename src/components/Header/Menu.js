@@ -40,7 +40,7 @@ padding-right: 16px;
 font-size: 11px;
 `;
 
-const MenuLinkSpan = styled.span`
+const MenuLinkSpan= styled.span`
 margin-right: -0.182em;
 display: inline-block;
 `;
@@ -113,10 +113,14 @@ const MenuDesktop = (props) => {
 };
 
 
+
+
+
+
 const MenuMobile = (props) => {
   const links = props.links.map((link, i) =>
     <MenuItemCollapse key={i}>
-      <MenuLinkCollapse exact = {link.name === 'Home'} to={link.href} activeStyle={activeStyleCollapse}>
+      <MenuLinkCollapse onClick={props.linkClickHandler} exact = {link.name === 'Home'} to={link.href} activeStyle={activeStyleCollapse}>
         <MenuLinkSpan>{link.name}</MenuLinkSpan>
       </MenuLinkCollapse>
     </MenuItemCollapse>
@@ -124,7 +128,7 @@ const MenuMobile = (props) => {
 
   return (
     <CollapseWrapper style={{display: props.collapsed ? 'none' : 'block'}}>
-      <MenuCollapse>
+      <MenuCollapse >
         {links}
       </MenuCollapse>
     </CollapseWrapper>

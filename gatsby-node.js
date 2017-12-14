@@ -1,5 +1,5 @@
 const path = require('path');
-const fs = require('fs');
+const fs = require('mz/fs');
 const slugCreator = require('slug');
 const rp = require('request-promise');
 const jsonWriter = require('./gatsby-node-json-writer');

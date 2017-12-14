@@ -22,18 +22,18 @@ class TemplateWrapper extends Component {
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
-          script={[{
-            "type": "application/javascript", "defer": true, innerHTML: `(function(d, s, id) {
-        let js;
-        const fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=157512371329819";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'))`
-          }, {
-            "type": "text/javascript", "defer": true, src: '//e.issuu.com/embed.js'
-          }]}
+      //     script={[{
+      //       "type": "application/javascript", "defer": true, innerHTML: `(function(d, s, id) {
+      //   let js;
+      //   const fjs = d.getElementsByTagName(s)[0];
+      //   if (d.getElementById(id)) return;
+      //   js = d.createElement(s); js.id = id;
+      //   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=157512371329819";
+      //   fjs.parentNode.insertBefore(js, fjs);
+      // }(document, 'script', 'facebook-jssdk'))`
+      //     }, {
+      //       "type": "text/javascript", "defer": true, src: '//e.issuu.com/embed.js'
+      //     }]}
         >
         </Helmet>
         <TypographyStyle typography={typography}/>

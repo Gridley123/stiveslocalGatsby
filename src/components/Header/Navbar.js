@@ -53,6 +53,7 @@ export default class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.handleLinkClick = this. handleLinkClick.bind(this);
     this.state = {
       collapsed: true,
     }
@@ -64,6 +65,13 @@ export default class Navbar extends React.Component {
     this.setState(prevState => ({
       collapsed: !prevState.collapsed,
     }));
+  }
+
+  handleLinkClick(e) {
+    console.log('handleClickLink')
+    this.setState({
+      collapsed: true
+    });
   }
 
   render() {
@@ -80,7 +88,7 @@ export default class Navbar extends React.Component {
               </MediaQuery>
               <MediaQuery query='(max-width: 1032px)'>
                 <MenuButton collapsed={this.state.collapsed} clickHandler={this.handleClick}/>
-                <MenuMobile collapsed={this.state.collapsed} links={linksArray}/>
+                <MenuMobile collapsed={this.state.collapsed} linkClickHandler = {this.handleLinkClick} links={linksArray}/>
               </MediaQuery>
             </NavbarContainer>
           </NavbarInner>
